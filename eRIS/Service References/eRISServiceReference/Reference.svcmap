@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="bdf93b6c-2cc8-4b31-9a86-3509856c8322" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://eris.premierradiology.com/eRISService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="eRISService.xsd" MetadataType="Schema" ID="8e0135e9-ec14-4476-b61b-2f726855de4f" SourceId="1" SourceUrl="https://eris.premierradiology.com/eRISService.svc?xsd=xsd1" />
+    <MetadataFile FileName="eRISService1.xsd" MetadataType="Schema" ID="9e6dcd91-901c-44b0-9066-76335f906e66" SourceId="1" SourceUrl="https://eris.premierradiology.com/eRISService.svc?xsd=xsd0" />
+    <MetadataFile FileName="eRISService2.xsd" MetadataType="Schema" ID="2dbc001c-1a9d-4114-a214-3da7f1147e91" SourceId="1" SourceUrl="https://eris.premierradiology.com/eRISService.svc?xsd=xsd3" />
+    <MetadataFile FileName="eRISService3.xsd" MetadataType="Schema" ID="0913a2fe-fd8b-49c0-9e97-c97291d5ab7e" SourceId="1" SourceUrl="https://eris.premierradiology.com/eRISService.svc?xsd=xsd2" />
+    <MetadataFile FileName="eRISService.disco" MetadataType="Disco" ID="aec1bb2f-11c8-44bf-8ae7-3e755ef9aed3" SourceId="1" SourceUrl="https://eris.premierradiology.com/eRISService.svc?disco" />
+    <MetadataFile FileName="eRISService.wsdl" MetadataType="Wsdl" ID="4e484ffd-f41d-4032-a2dd-8f2b278b58b4" SourceId="1" SourceUrl="https://eris.premierradiology.com/eRISService.svc?wsdl" />
+    <MetadataFile FileName="eRISService1.wsdl" MetadataType="Wsdl" ID="e6c09219-5468-48c9-88eb-1c04c5775e72" SourceId="1" SourceUrl="https://eris.premierradiology.com/eRISService.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

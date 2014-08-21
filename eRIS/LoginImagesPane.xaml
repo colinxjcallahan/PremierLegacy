@@ -1,0 +1,60 @@
+﻿<telerikDocking:RadDocumentPane  
+    x:Class="eRIS.LoginImagesPane"
+    x:Name="_LoginImagesPane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" 
+    d:DesignWidth="1000" 
+    d:DesignHeight="750" 
+    xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls" 
+    Background="#FFA36E2C"
+    xmlns:telerikDocking="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Docking"
+    xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+    xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    xmlns:eRIS="clr-namespace:eRIS"
+    Header="Login Images">
+    <Grid x:Name="MainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="160" />
+            <ColumnDefinition Width="160" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="120" />
+            <RowDefinition Height="120" />
+            <RowDefinition Height="120" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="35" />
+            <RowDefinition Height="95" />
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" Margin="5,5,5,5" MaxWidth="300" HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="imageLeft" />
+        <Image Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,5,5,5" HorizontalAlignment="Center" VerticalAlignment="Top" Source="https://eris.premierradiology.com/Images/PremierRadiology.jpg" />
+        <Image Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,5,5,5" HorizontalAlignment="Center" Source="https://eris.premierradiology.com/Images/WBR.jpg" />
+        <Image Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,5,5,5" HorizontalAlignment="Center" Source="https://eris.premierradiology.com/Images/Hermitage.jpg" />
+        <Image Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="5,5,5,5" HorizontalAlignment="Center" Source="https://eris.premierradiology.com/Images/MtJuliet.jpg" />
+        <Image Grid.Row="0" Grid.Column="4" Grid.RowSpan="4" Grid.ColumnSpan="2" Margin="5,5,5,5" MaxWidth="300" HorizontalAlignment="Center" VerticalAlignment="Top" x:Name="imageRight" />
+        <telerikInput:RadUpload Grid.Column="0" Grid.Row="4" Grid.RowSpan="4" VerticalAlignment="Bottom" HorizontalAlignment="Left"
+			UploadServiceUrl="/UploadHandler.ashx" TargetFolder="Images" IsAutomaticUpload="True"
+            MaxHeight="200" MaxWidth="300"
+			Filter="Image Files (*.jpg)|*.jpg" OverwriteExistingFiles="True" x:Name="radUploadLeft"			
+			FileUploadStarting="radUploadLeft_FileUploadStarting" FileUploaded="radUploadLeft_FileUploaded"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="User Name:" Margin="5,5,5,5" FontFamily="Arial" />
+        <TextBlock Grid.Row="5" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Right" Text="Password:" Margin="5,5,5,5" FontFamily="Arial" />
+        <TextBox x:Name="userName" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left" Width="150" Margin="5,5,5,5" TabIndex="0" />
+        <PasswordBox x:Name="password" Grid.Row="5" Grid.Column="2" HorizontalAlignment="Left" Width="150" Margin="5,5,5,5" TabIndex="1" />
+        <Button Name="btnLogin" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Width="100" Margin="5,5,5,5" Content="Login" Click="btnLogin_Click" />
+
+        <telerikInput:RadUpload Grid.Column="4" Grid.Row="4" Grid.RowSpan="4" VerticalAlignment="Bottom" HorizontalAlignment="Left"
+			UploadServiceUrl="/UploadHandler.ashx" TargetFolder="Images" IsAutomaticUpload="True"
+            MaxHeight="200" MaxWidth="300"
+			Filter="Image Files (*.jpg)|*.jpg" OverwriteExistingFiles="True" x:Name="radUploadRight"			
+			FileUploadStarting="radUploadRight_FileUploadStarting" FileUploaded="radUploadRight_FileUploaded"/>
+
+    </Grid>
+</telerikDocking:RadDocumentPane>

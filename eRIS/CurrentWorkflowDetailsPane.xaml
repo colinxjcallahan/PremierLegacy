@@ -1,0 +1,28 @@
+﻿<telerikDocking:RadDocumentPane
+    x:Class="eRIS.CurrentWorkflowDetailsPane" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    xmlns:telerikDocking="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Docking"
+    xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+    xmlns:telerikGridView="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView"    
+    xmlns:eRIS="clr-namespace:eRIS">
+    <telerikGridView:RadGridView x:Name="gvDetails" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserInsertRows="False" RowIndicatorVisibility="Collapsed">
+        <telerikGridView:RadGridView.Columns>
+            <telerikGridView:GridViewDataColumn Header="Site" TextAlignment="Left" DataMemberBinding="{Binding SiteCode }" />
+            <telerikGridView:GridViewDataColumn Header="Accession" TextAlignment="Left" DataMemberBinding="{Binding AccessionNumber }" />
+            <telerikGridView:GridViewDataColumn Header="Patient" TextAlignment="Left" DataMemberBinding="{Binding Patient }" />
+            <telerikGridView:GridViewDataColumn Header="Mod" TextAlignment="Left" DataMemberBinding="{Binding Modality }" />
+            <telerikGridView:GridViewDataColumn Header="Exam" TextAlignment="Left" DataMemberBinding="{Binding Exam }" />
+            <telerikGridView:GridViewDataColumn Header="Date" TextAlignment="Left" DataMemberBinding="{Binding ExamDate }" />
+            <telerikGridView:GridViewDataColumn Header="Schedule" TextAlignment="Right" DataMemberBinding="{Binding Scheduled }" />
+            <telerikGridView:GridViewDataColumn Header="Arrive" TextAlignment="Right" DataMemberBinding="{Binding Arrived }" />
+            <telerikGridView:GridViewDataColumn Header="Complete" TextAlignment="Right" DataMemberBinding="{Binding Completed }" />
+            <telerikGridView:GridViewDataColumn Header="Sign" TextAlignment="Right" DataMemberBinding="{Binding Signed }" />
+            <telerikGridView:GridViewDataColumn Header="Radiologist" TextAlignment="Left" DataMemberBinding="{Binding Rad }" />
+        </telerikGridView:RadGridView.Columns>
+    </telerikGridView:RadGridView>
+</telerikDocking:RadDocumentPane>

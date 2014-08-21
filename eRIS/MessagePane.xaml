@@ -1,0 +1,61 @@
+﻿<telerikDocking:RadDocumentPane
+    x:Class="eRIS.MessagePane" 
+    x:Name="_MessagePane" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:telerik="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls"  
+    xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    xmlns:telerikDocking="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Docking"
+    xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+    xmlns:telerikGridView="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView"    
+    xmlns:eRIS="clr-namespace:eRIS"
+    Header="Service Msgs">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <telerikGridView:RadGridView x:Name="gvTotals" Grid.Row="1" Grid.Column="0" AutoGenerateColumns="False" IsFilteringAllowed="False" CanUserDeleteRows="False" CanUserInsertRows="False" ShowGroupPanel="False" RowIndicatorVisibility="Collapsed">
+            <telerikGridView:RadGridView.Columns>
+                <telerikGridView:GridViewDataColumn Header="eRIStic Process" TextAlignment="Left" DataMemberBinding="{Binding Description }" />
+                <telerikGridView:GridViewDataColumn Header="Done" TextAlignment="Left" DataMemberBinding="{Binding Processed }" />
+                <telerikGridView:GridViewDataColumn Header="Last Updated" TextAlignment="Left" DataMemberBinding="{Binding Updated }" />
+            </telerikGridView:RadGridView.Columns>
+        </telerikGridView:RadGridView>
+        <telerikGridView:RadGridView x:Name="gvDetails" Grid.Row="1" Grid.Column="1" AutoGenerateColumns="False" IsFilteringAllowed="False" CanUserDeleteRows="False" CanUserInsertRows="False" ShowGroupPanel="False" RowIndicatorVisibility="Collapsed">
+            <telerikGridView:RadGridView.Columns>
+                <telerikGridView:GridViewDataColumn Header="Date/Time" TextAlignment="Left" DataMemberBinding="{Binding Created }" />
+                <telerikGridView:GridViewDataColumn Header="Source" TextAlignment="Left" DataMemberBinding="{Binding MessagesLogSource }" />
+                <telerikGridView:GridViewDataColumn Header="Type" TextAlignment="Left" DataMemberBinding="{Binding MessagesLogType }" />
+                <telerikGridView:GridViewDataColumn Header="Description" TextAlignment="Left" DataMemberBinding="{Binding Description }" />
+            </telerikGridView:RadGridView.Columns>
+        </telerikGridView:RadGridView>
+        <telerik:RadExpander x:Name="optionsExpander" Grid.Row="0" Grid.RowSpan="2" Grid.Column="0" Grid.ColumnSpan="2" Background="Bisque" ExpandDirection="Down" VerticalAlignment="Top" HorizontalAlignment="Stretch">
+            <telerik:RadExpander.Header>
+                <TextBlock Text="Options" Visibility="Visible" />
+            </telerik:RadExpander.Header>
+            <telerik:RadExpander.Content>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <telerikInput:RadCalendar x:Name="SelectDate" Grid.Row="0" Grid.Column="0" SelectionMode="Extended" AreWeekNumbersVisible="False" IsTodayHighlighted="True" Margin="5,5,5,5"  />
+                    <Button Name="btnRefresh" Grid.Row="1" Grid.Column="0" Width="100" Margin= "5,5,5,5" Content="Refresh" Click="btnRefresh_Click" />
+                </Grid>
+            </telerik:RadExpander.Content>
+        </telerik:RadExpander>
+    </Grid>
+</telerikDocking:RadDocumentPane>
+    

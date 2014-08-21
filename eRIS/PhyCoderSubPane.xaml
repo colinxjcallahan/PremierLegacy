@@ -1,0 +1,142 @@
+﻿<UserControl 
+    x:Class="eRIS.PhyCoderSubPane" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    xmlns:telerikDocking="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Docking"
+    xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+    xmlns:telerikGridView="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView"   
+    xmlns:eRIS="clr-namespace:eRIS"
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" >
+    <Grid x:Name="MainGrid" Background="AliceBlue">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="1,1,1,1">
+            <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" Margin="1,1,1,1">
+                <TextBlock Text="Status:" Width="185" Margin="1,1,1,1" />
+                <TextBlock x:Name="dStatus" Width="185" Margin="1,1,1,1" FontWeight="Bold" />
+                <TextBlock Text="Exam:" Width="185" Margin="1,1,1,1" />
+                <TextBlock x:Name="dExam" Width="185" Margin="1,1,1,1" FontWeight="Bold" />
+                <TextBlock Text="Order Date:" Width="185" Margin="1,1,1,1" />
+                <TextBlock x:Name="dOrder" Width="185" Margin="1,1,1,1" FontWeight="Bold" />
+                <TextBlock Text="Perform Date:" Width="185" Margin="1,1,1,1" />
+                <TextBlock x:Name="dPerform" Width="185" Margin="1,1,1,1" FontWeight="Bold" />
+                <TextBlock Text="Sign Date:" Width="185" Margin="1,1,1,1" />
+                <TextBlock x:Name="dReport" Width="185" Margin="1,1,1,1" FontWeight="Bold" />
+                <TextBlock Text="Notes:" Width="185" Margin="1,1,1,1" />
+                <TextBox x:Name="iNotes" HorizontalAlignment="Left" TextWrapping="Wrap" Height="200" Width="185" Margin="1,1,1,1" />
+                <TextBlock Text="Assign To:" Width="185" Margin="1,1,1,1" />
+                <telerikInput:RadComboBox x:Name="iAssignTo" Margin="0 5 0 0" DisplayMemberPath="Name" SelectedValuePath="ID" IsReadOnly="True" Width="185" HorizontalAlignment="Left" />
+                <TextBlock Text="Assign Date:" Width="185" Margin="1,1,1,1" />
+                <TextBlock x:Name="dAssign" Width="185" Margin="1,1,1,1" FontWeight="Bold" />
+            </StackPanel>
+            <StackPanel Orientation="Vertical"  HorizontalAlignment="Center" Margin="1,1,1,1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBlock Text="#:" Width="30" Margin="1,1,1,1" />
+                    <TextBlock Text="Charge:" Width="60" Margin="1,1,1,1" />
+                    <TextBlock Text="Modifier:" Width="60" Margin="1,1,1,1" />
+                    <TextBlock Text="ICD9:" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit1" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge1" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier1" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1"/>
+                    <TextBox x:Name="iICD1" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit2" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge2" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier2" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD2" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit3" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge3" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier3" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD3" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit4" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge4" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier4" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD4" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit5" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge5" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier5" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD5" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit6" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge6" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier6" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD6" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit7" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge7" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier7" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD7" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit8" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge8" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier8" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD8" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit9" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge9" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier9" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD9" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit10" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge10" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier10" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD10" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit11" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge11" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier11" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD11" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit12" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge12" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier12" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD12" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit13" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge13" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier13" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD13" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit14" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge14" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier14" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iICD14" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="1,1,1,1">
+                    <TextBox x:Name="iUnit15" HorizontalAlignment="Left" Width="30" Margin="1,1,1,1" />
+                    <TextBox x:Name="iCharge15" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1" />
+                    <TextBox x:Name="iModifier15" HorizontalAlignment="Left" Width="60" Margin="1,1,1,1"  />
+                    <TextBox x:Name="iICD15" HorizontalAlignment="Left" Width="166" Margin="1,1,1,1"  />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
+    
+ 

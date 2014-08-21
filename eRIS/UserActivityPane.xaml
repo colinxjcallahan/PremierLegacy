@@ -1,0 +1,51 @@
+﻿<telerikDocking:RadDocumentPane
+    x:Class="eRIS.UserActivityPane" 
+    x:Name="_UserActivityPane" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:telerikInput="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Input"
+    xmlns:telerikDocking="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Docking"
+    xmlns:telerikNavigation="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.Navigation"
+    xmlns:telerikGridView="clr-namespace:Telerik.Windows.Controls;assembly=Telerik.Windows.Controls.GridView"    
+    xmlns:eRIS="clr-namespace:eRIS">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="125" />
+        </Grid.ColumnDefinitions>
+        <telerikGridView:RadGridView x:Name="gvDetails" Grid.Row="0" Grid.Column="0" AutoGenerateColumns="False" CanUserDeleteRows="False" CanUserInsertRows="False" RowIndicatorVisibility="Collapsed">
+            <telerikGridView:RadGridView.Columns>
+                <telerikGridView:GridViewDataColumn Header="Date/Time" TextAlignment="Left" DataMemberBinding="{Binding Created }" />
+                <telerikGridView:GridViewDataColumn Header="Created By" TextAlignment="Left" DataMemberBinding="{Binding CreatedByUser }" />
+                <telerikGridView:GridViewDataColumn Header="Source ID" TextAlignment="Left" DataMemberBinding="{Binding SourceID }" />
+                <telerikGridView:GridViewDataColumn Header="Type" TextAlignment="Left" DataMemberBinding="{Binding UsersLogType }" />
+                <telerikGridView:GridViewDataColumn Header="Desription" TextAlignment="Left" DataMemberBinding="{Binding Description }" />
+            </telerikGridView:RadGridView.Columns>
+        </telerikGridView:RadGridView>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="35" />
+                <RowDefinition Height="45" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="Beg Date" Margin="5,5,5,5" FontFamily="Arial" />
+            <telerikInput:RadDatePicker x:Name="begDate" Grid.Row="1" Grid.Column="0" Margin="5,5,5,5"  />
+            <TextBlock Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="End Date" Margin="5,5,5,5" FontFamily="Arial" />
+            <telerikInput:RadDatePicker x:Name="endDate" Grid.Row="3" Grid.Column="0" Margin="5,5,5,5"  />
+            <Button Name="btnRefresh" Grid.Row="4" Grid.Column="0" Width="100" Margin="5,5,5,5" Content="Refresh" Click="btnRefresh_Click" />
+        </Grid>
+    </Grid>
+</telerikDocking:RadDocumentPane>
+    

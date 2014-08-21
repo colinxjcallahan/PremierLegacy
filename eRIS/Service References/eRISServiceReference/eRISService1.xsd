@@ -1,0 +1,1109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://eris.premierradiology.com/eRISService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/eRIS.Web" />
+  <xs:import schemaLocation="https://eris.premierradiology.com/eRISService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="https://eris.premierradiology.com/eRISService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="GetUserName">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUserNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetUserNameResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentWorkflow">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentWorkflowResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetCurrentWorkflowResult" nillable="true" type="q1:ArrayOffCurrentWorkflowResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentWorkflowDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="chart" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCurrentWorkflowDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetCurrentWorkflowDetailsResult" nillable="true" type="q2:ArrayOffCurrentWorkflowDetailsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPermissions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPermissionsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetPermissionsResult" nillable="true" type="q3:ArrayOfsGetPermissionsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonnel">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPersonnelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetPersonnelResult" nillable="true" type="q4:ArrayOfsGetPersonnelResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetUsersResult" nillable="true" type="q5:ArrayOfsGetUsersResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Login">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ipAddress" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="LoginResult" nillable="true" type="q6:ArrayOfsLoginResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetPermissions">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="isAdmin" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isRISAdmin" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isManager" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isRadiologist" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isRadiologistADI" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isTech" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isClerk" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isTelerad" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isPhysician" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isPatient" type="xs:boolean" />
+        <xs:element minOccurs="0" name="isCoder" type="xs:boolean" />
+        <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isCoderAssignable" type="xs:boolean" />
+        <xs:element minOccurs="0" name="RadGroup" type="xs:int" />
+        <xs:element minOccurs="0" name="isCoderLimited" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetPermissionsResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStudiesReadPerDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="group" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStudiesReadPerDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetStudiesReadPerDayResult" nillable="true" type="q7:ArrayOfsStudiesReadPerDayResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStudiesReadPerHour">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="rad" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetStudiesReadPerHourResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetStudiesReadPerHourResult" nillable="true" type="q8:ArrayOfsStudiesReadPerHourResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRadGroup">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRadGroupResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetRadGroupResult" nillable="true" type="q9:ArrayOfsGetRadGroupResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUsersLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sourceID" type="xs:int" />
+        <xs:element minOccurs="0" name="createdByID" type="xs:int" />
+        <xs:element minOccurs="0" name="typeID" type="xs:int" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertUsersLogResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersLogPerDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersLogPerDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetUsersLogPerDayResult" nillable="true" type="q10:ArrayOfsUsersLogPerDayResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersLogPerSource">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SourceID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersLogPerSourceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetUsersLogPerSourceResult" nillable="true" type="q11:ArrayOfsUsersLogBySourceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersLogByUser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetUsersLogByUserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetUsersLogByUserResult" nillable="true" type="q12:ArrayOfsUsersLogByUserResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessagesLogPerDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessagesLogPerDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetMessagesLogPerDayResult" nillable="true" type="q13:ArrayOfsMessagesLogPerDayResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetLayout">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="layout" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetLayoutResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTurnaroundTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetTurnaroundTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetTurnaroundTimeResult" nillable="true" type="q14:ArrayOffTurnaroundTimeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInterpretationTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInterpretationTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetInterpretationTimeResult" nillable="true" type="q15:ArrayOffInterpretationTimeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientLongWait">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientLongWaitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetPatientLongWaitResult" nillable="true" type="q16:ArrayOffPatientLongWaitResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientShortWait">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientShortWaitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetPatientShortWaitResult" nillable="true" type="q17:ArrayOffPatientShortWaitResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientWait">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPatientWaitResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetPatientWaitResult" nillable="true" type="q18:ArrayOffPatientWaitResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompletedPerTech">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompletedPerTechResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetCompletedPerTechResult" nillable="true" type="q19:ArrayOffCompletedPerTechResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegisteredPatients">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegisteredPatientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetRegisteredPatientsResult" nillable="true" type="q20:ArrayOffRegisteredPatientsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegistrationTime">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetRegistrationTimeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetRegistrationTimeResult" nillable="true" type="q21:ArrayOffRegistrationTimeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFirstLastAppointment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetFirstLastAppointmentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetFirstLastAppointmentResult" nillable="true" type="q22:ArrayOffFirstLastAppointmentResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduledPatients">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetScheduledPatientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetScheduledPatientsResult" nillable="true" type="q23:ArrayOffScheduledPatientsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersPending">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersPendingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetOrdersPendingResult" nillable="true" type="q24:ArrayOfsGetOrdersPendingResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListOrdersPending">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListOrdersPendingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="ListOrdersPendingResult" nillable="true" type="q25:ArrayOfsListOrdersPendingResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrdersPending">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element xmlns:q26="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="status" type="q26:char" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetOrdersPendingResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInterfaceXref">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetInterfaceXrefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetInterfaceXrefResult" nillable="true" type="q27:ArrayOfsGetInterfaceXrefResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListInterfaceXref">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="xType" type="q28:char" />
+        <xs:element minOccurs="0" name="xFacility" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListInterfaceXrefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="ListInterfaceXrefResult" nillable="true" type="q29:ArrayOfsListInterfaceXrefResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetInterfaceXref">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element xmlns:q30="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="xType" type="q30:char" />
+        <xs:element minOccurs="0" name="xFacility" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xSendingValue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="xReceivingValue" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetInterfaceXrefResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListInterface">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListInterfaceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="ListInterfaceResult" nillable="true" type="q31:ArrayOfsListInterfaceResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListPatients">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListPatientsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="ListPatientsResult" nillable="true" type="q32:ArrayOfsListPatientsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListProcedures">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListProceduresResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="ListProceduresResult" nillable="true" type="q33:ArrayOfsListProceduresResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListProviders">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListProvidersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="ListProvidersResult" nillable="true" type="q34:ArrayOfsListProvidersResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListReferrers">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListReferrersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="ListReferrersResult" nillable="true" type="q35:ArrayOfsListReferrersResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessagesSummary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MessagesSummaryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="MessagesSummaryResult" nillable="true" type="q36:ArrayOfsMessagesSummaryResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhyCoderTotals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhyCoderTotalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="PhyCoderTotalsResult" nillable="true" type="q37:ArrayOfsPhyCoderTotalsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhyCoderReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SQL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhyCoderReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="PhyCoderReportsResult" nillable="true" type="q38:ArrayOfReport" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhyCoderOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SQL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PhyCoderOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="PhyCoderOrdersResult" nillable="true" type="q39:ArrayOfOrder" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDemographics">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mrn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="visit" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDemographicsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetDemographicsResult" nillable="true" type="q40:ArrayOfsGetDemographicsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientmrn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="visit" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrdersResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetOrdersResult" nillable="true" type="q41:ArrayOfsGetOrdersResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetReportResult" nillable="true" type="q42:ArrayOfsGetReportResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetOrderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetOrderResult" nillable="true" type="q43:ArrayOfsGetOrderResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientmrn" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="examnumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="visit" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetReportsResult" nillable="true" type="q44:ArrayOfsGetReportsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDuplicateReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDuplicateReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetDuplicateReportsResult" nillable="true" type="q45:ArrayOfsDuplicateReportsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="status" type="q46:char" />
+        <xs:element minOccurs="0" name="charge1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge11" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge12" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge13" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge14" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge15" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier11" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier12" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier13" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier14" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier15" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codedby" type="xs:int" />
+        <xs:element minOccurs="0" name="notes" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd11" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd12" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd13" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd14" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd15" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="unit1" type="xs:int" />
+        <xs:element minOccurs="0" name="unit2" type="xs:int" />
+        <xs:element minOccurs="0" name="unit3" type="xs:int" />
+        <xs:element minOccurs="0" name="unit4" type="xs:int" />
+        <xs:element minOccurs="0" name="unit5" type="xs:int" />
+        <xs:element minOccurs="0" name="unit6" type="xs:int" />
+        <xs:element minOccurs="0" name="unit7" type="xs:int" />
+        <xs:element minOccurs="0" name="unit8" type="xs:int" />
+        <xs:element minOccurs="0" name="unit9" type="xs:int" />
+        <xs:element minOccurs="0" name="unit10" type="xs:int" />
+        <xs:element minOccurs="0" name="unit11" type="xs:int" />
+        <xs:element minOccurs="0" name="unit12" type="xs:int" />
+        <xs:element minOccurs="0" name="unit13" type="xs:int" />
+        <xs:element minOccurs="0" name="unit14" type="xs:int" />
+        <xs:element minOccurs="0" name="unit15" type="xs:int" />
+        <xs:element minOccurs="0" name="assignedto" type="xs:int" />
+        <xs:element minOccurs="0" name="price1" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price2" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price3" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price4" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price5" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price6" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price7" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price8" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price9" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price10" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price11" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price12" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price13" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price14" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price15" type="xs:decimal" />
+        <xs:element minOccurs="0" name="dosage1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage11" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage12" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage13" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage14" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage15" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetReportResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReport">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element xmlns:q47="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="status" type="q47:char" />
+        <xs:element minOccurs="0" name="charge1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge11" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge12" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge13" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge14" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="charge15" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier11" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier12" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier13" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier14" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="modifier15" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codedby" type="xs:int" />
+        <xs:element minOccurs="0" name="notes" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd11" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd12" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd13" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd14" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="icd15" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="unit1" type="xs:int" />
+        <xs:element minOccurs="0" name="unit2" type="xs:int" />
+        <xs:element minOccurs="0" name="unit3" type="xs:int" />
+        <xs:element minOccurs="0" name="unit4" type="xs:int" />
+        <xs:element minOccurs="0" name="unit5" type="xs:int" />
+        <xs:element minOccurs="0" name="unit6" type="xs:int" />
+        <xs:element minOccurs="0" name="unit7" type="xs:int" />
+        <xs:element minOccurs="0" name="unit8" type="xs:int" />
+        <xs:element minOccurs="0" name="unit9" type="xs:int" />
+        <xs:element minOccurs="0" name="unit10" type="xs:int" />
+        <xs:element minOccurs="0" name="unit11" type="xs:int" />
+        <xs:element minOccurs="0" name="unit12" type="xs:int" />
+        <xs:element minOccurs="0" name="unit13" type="xs:int" />
+        <xs:element minOccurs="0" name="unit14" type="xs:int" />
+        <xs:element minOccurs="0" name="unit15" type="xs:int" />
+        <xs:element minOccurs="0" name="assignedto" type="xs:int" />
+        <xs:element minOccurs="0" name="price1" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price2" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price3" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price4" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price5" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price6" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price7" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price8" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price9" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price10" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price11" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price12" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price13" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price14" type="xs:decimal" />
+        <xs:element minOccurs="0" name="price15" type="xs:decimal" />
+        <xs:element minOccurs="0" name="dosage1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage2" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage3" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage4" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage5" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage6" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage7" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage8" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage9" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage10" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage11" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage12" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage13" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage14" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="dosage15" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codingLocation" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateReportResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="UpdateReportResult" nillable="true" type="q48:ArrayOfsUpdateReportResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fSplitHL7GPMS">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="location" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="patientmrn" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fSplitHL7GPMSResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="fSplitHL7GPMSResult" nillable="true" type="q49:ArrayOffSplitHL7GPMSResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportsCodedPerDay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="begDate" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endDate" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetReportsCodedPerDayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetReportsCodedPerDayResult" nillable="true" type="q50:ArrayOfsReportsCodedPerDayResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetPending">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="codedby" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetPendingResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearPending">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ClearPendingResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListICD9">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="code" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListICD9Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="ListICD9Result" nillable="true" type="q51:ArrayOfsListICD9Result" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessagesLog">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sourceID" type="xs:int" />
+        <xs:element minOccurs="0" name="typeID" type="xs:int" />
+        <xs:element minOccurs="0" name="description" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetMessagesLogResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarkDeleted">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="loc" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="exam" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="codedby" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarkDeletedResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetToCode">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetToCodeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetToCodeResult" nillable="true" type="q52:ArrayOfsToCodeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetExamNumber">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="exam" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetExamNumberResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetRad">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+        <xs:element minOccurs="0" name="rad" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetRadResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SetRadResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BioImagingReports">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SQL" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BioImagingReportsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="BioImagingReportsResult" nillable="true" type="q53:ArrayOfbAppointment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CoderTotals">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CoderTotalsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="CoderTotalsResult" nillable="true" type="q54:ArrayOfsCoderTotalsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamComments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Exam" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamCommentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/eRIS.Web" minOccurs="0" name="GetExamCommentsResult" nillable="true" type="q55:ArrayOfsGetExamCommentsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamDocuments">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PatientMRN" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Exam" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetExamDocumentsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="GetExamDocumentsResult" nillable="true" type="q56:ArrayOfKeyValueOfstringstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

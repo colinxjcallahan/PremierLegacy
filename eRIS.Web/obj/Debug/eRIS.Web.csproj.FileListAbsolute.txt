@@ -1,0 +1,39 @@
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard.Web\bin\eRIS.Web.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard.Web\bin\eRIS.Web.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard.Web\bin\Telerik.Windows.RadUploadHandler.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard.Web\bin\Telerik.Windows.RadUploadHandler.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard.Web\obj\Debug\eRIS.Web.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard.Web\obj\Debug\eRIS.Web.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\SplashScreen.xaml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\eRIS.Web.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\eRIS.Web.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\Telerik.Windows.RadUploadHandler.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\Telerik.Windows.RadUploadHandler.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.pdb
+C:\Users\bennie.wilson\Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\SplashScreen.xaml
+C:\Users\bennie.wilson\Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\eRIS.Web.dll
+C:\Users\bennie.wilson\Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\eRIS.Web.pdb
+C:\Users\bennie.wilson\Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\Telerik.Windows.RadUploadHandler.dll
+C:\Users\bennie.wilson\Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\bin\Telerik.Windows.RadUploadHandler.pdb
+C:\Users\bennie.wilson\Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bennie.wilson\Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.dll
+C:\Users\bennie.wilson\Documents\Visual Studio 2010\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.pdb
+C:\eRIS\Projects\eRIS\eRIS.Web\bin\SplashScreen.xaml
+C:\eRIS\Projects\eRIS\eRIS.Web\bin\eRIS.Web.dll
+C:\eRIS\Projects\eRIS\eRIS.Web\bin\eRIS.Web.pdb
+C:\eRIS\Projects\eRIS\eRIS.Web\bin\Telerik.Windows.RadUploadHandler.dll
+C:\eRIS\Projects\eRIS\eRIS.Web\bin\Telerik.Windows.RadUploadHandler.pdb
+C:\eRIS\Projects\eRIS\eRIS.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\eRIS\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.dll
+C:\eRIS\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.pdb
+C:\Projects\eRIS\eRIS.Web\bin\SplashScreen.xaml
+C:\Projects\eRIS\eRIS.Web\bin\eRIS.Web.dll.config
+C:\Projects\eRIS\eRIS.Web\bin\eRIS.Web.dll
+C:\Projects\eRIS\eRIS.Web\bin\eRIS.Web.pdb
+C:\Projects\eRIS\eRIS.Web\bin\Telerik.Windows.RadUploadHandler.pdb
+C:\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.csprojResolveAssemblyReference.cache
+C:\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.dll
+C:\Projects\eRIS\eRIS.Web\obj\Debug\eRIS.Web.pdb

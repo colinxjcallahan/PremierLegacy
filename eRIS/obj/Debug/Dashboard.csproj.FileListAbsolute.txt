@@ -1,0 +1,697 @@
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\AppManifest.xaml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.xap
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\TestPage.html
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Editor.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Gauge.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.MediaPlayer.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.RibbonBar.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Scheduler.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Themes.Summer.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Data.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Xml.Linq.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Data.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Scheduler.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Scheduler.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.RibbonBar.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.RibbonBar.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Themes.Summer.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Gauge.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Gauge.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.MediaPlayer.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.MediaPlayer.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Editor.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Editor.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Xml.Linq.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\Telerik.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\Telerik.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\Telerik.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Xml.Linq.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Xml.Linq.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Xml.Linq.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Xml.Linq.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Xml.Linq.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Xml.Linq.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Xml.Linq.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\App.g.cs
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\MainPage.g.cs
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.g.resources
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\XapCacheFile.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Json.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Json.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Json.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Json.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Json.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Json.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Json.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Json.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Json.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Json.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Data.Services.Client.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Data.Services.Client.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Data.Services.Client.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Data.Services.Client.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Data.Services.Client.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Data.Services.Client.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Data.Services.Client.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Data.Services.Client.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Data.Services.Client.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Data.Services.Client.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Reactive.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Toolkit.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Toolkit.pdb
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Toolkit.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\CurrentWorkflowPane.g.cs
+C:\Users\mike\Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\CurrentWorkflowDetailsPane.g.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.xap
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\TestPage.html
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Data.Services.Client.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Json.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Reactive.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Toolkit.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Editor.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Gauge.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.MediaPlayer.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.RibbonBar.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Scheduler.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Themes.Summer.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Data.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Xml.Linq.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Data.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Scheduler.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Scheduler.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Json.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.RibbonBar.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.RibbonBar.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Toolkit.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Toolkit.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Gauge.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Gauge.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.MediaPlayer.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.MediaPlayer.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Xml.Linq.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Data.Services.Client.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Editor.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Editor.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Themes.Summer.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\App.g.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\CurrentWorkflowDetailsPane.g.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\CurrentWorkflowPane.g.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\MainPage.g.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\PermissionsPane.g.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\StudiesReadPerDayPane.g.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.g.resources
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2008\Projects\Dashboard\Dashboard\obj\Debug\UserActivityPane.g.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Dashboard.xap
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\TestPage.html
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Data.Services.Client.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Json.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Xml.Linq.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Data.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Data.Services.Client.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Json.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Xml.Linq.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.Windows.Data.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ar\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\bg\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ca\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\cs\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\da\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\el\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\et\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\eu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\he\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\hr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\hu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\id\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\lt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\lv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ms\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\nl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\no\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\pl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\pt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\pt-BR\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ro\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ru\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sr-Cyrl-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sr-Latn-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\th\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\tr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\uk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\vi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ru\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ru\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ar\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\bg\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ca\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\cs\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\da\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\el\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\et\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\eu\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fi\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\he\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\hr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\hu\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\id\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\lt\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\lv\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ms\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\nl\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\no\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\pl\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\pt\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\pt-BR\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ro\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ru\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sk\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sl\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sr-Latn-CS\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\sv\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\th\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\tr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\uk\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\vi\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ru\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ru\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ru\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\App.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\AvgRegistrationPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\CompletedPerTechPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\FirstLastStudyPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\RegisteredPerClerkPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\ScheduledPatientsPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\PatientWaitPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\PatientShortWaitPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\PatientLongWaitPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\InterpretationTimePane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\TurnaroundTimePane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\CurrentWorkflowDetailsPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\CurrentWorkflowPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\MainPage.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\PermissionsPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\StudiesReadPerDayPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\UserActivityPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.g.resources
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\Dashboard.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\XapCacheFile.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\Telerik.Windows.Data.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\System.ServiceModel.Web.Extensions.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\de\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\es\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\fr\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\it\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ja\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ko\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\ru\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hans\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\Bin\Debug\zh-Hant\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\LoginImagesPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\Dashboard\Dashboard\obj\Debug\MessagePane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Dashboard.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Dashboard.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\AppManifest.xaml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Dashboard.xap
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\TestPage.html
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Data.Services.Client.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Json.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.ServiceModel.DomainServices.Client.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Windows.Controls.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Windows.Data.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Data.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Xml.Linq.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.ServiceModel.Web.Extensions.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Data.Services.Client.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Json.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.ServiceModel.DomainServices.Client.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.ServiceModel.DomainServices.Client.Web.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Windows.Controls.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Windows.Data.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Charting.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.DataVisualization.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Docking.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.GridView.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Input.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Controls.Navigation.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Data.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\Telerik.Windows.Data.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.Xml.Linq.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\System.ServiceModel.Web.Extensions.xml
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ar\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\bg\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ca\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\cs\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\da\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\el\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\et\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\eu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\he\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\hr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\hu\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\id\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\lt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\lv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ms\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\nl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\no\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\pl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\pt\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\pt-BR\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ro\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ru\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sl\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sr-Cyrl-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sr-Latn-CS\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sv\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\th\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\tr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\uk\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\vi\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fr\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ja\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ko\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ru\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hans\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hant\System.Data.Services.Client.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fr\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ja\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ko\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ru\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hans\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hant\System.Json.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ar\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\bg\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ca\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\cs\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\da\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\el\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\et\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\eu\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fi\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\he\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\hr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\hu\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\id\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\lt\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\lv\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ms\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\nl\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\no\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\pl\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\pt\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\pt-BR\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ro\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ru\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sk\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sl\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sr-Cyrl-CS\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sr-Latn-CS\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\sv\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\th\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\tr\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\uk\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\vi\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ru\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ru\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fr\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ja\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ko\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ru\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hans\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hant\System.Xml.Linq.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\de\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\es\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\fr\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\it\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ja\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ko\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\ru\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hans\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\Bin\Debug\zh-Hant\System.ServiceModel.Web.Extensions.resources.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\App.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\AvgRegistrationPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\CompletedPerTechPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\MessagePane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\LoginImagesPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\FirstLastStudyPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\RegisteredPerClerkPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\ScheduledPatientsPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\PatientWaitPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\PatientShortWaitPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\PatientLongWaitPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\InterpretationTimePane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\TurnaroundTimePane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\CurrentWorkflowDetailsPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\CurrentWorkflowPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\MainPage.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\PermissionsPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\StudiesReadPerDayPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\UserActivityPane.g.i.cs
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\Dashboard.g.resources
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\Dashboard.dll
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\Dashboard.pdb
+C:\Documents and Settings\bennie.wilson\My Documents\Visual Studio 2010\Projects\eRIS\Dashboard\obj\Debug\XapCacheFile.xml
