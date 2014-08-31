@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="dashboard" Class="eRISDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=NOLSQL01;Initial Catalog=dashboard;Persist Security Info=True;User ID=dashboard;Connect Timeout=30" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="eRISConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=test-rissql;Initial Catalog=dashboard;Persist Security Info=True;User ID=dashboard" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="eRISConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.UsersLogTypes" Member="UsersLogTypes">
     <Type Name="UsersLogType">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -298,9 +298,25 @@
       <Column Name="CheckForSameDayReports" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.RadGroup" Member="RadGroups">
+    <Type Name="RadGroup">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UsersLog" Member="UsersLogs">
+    <Type Name="UsersLog">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SourceID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
+      <Column Name="CreatedByID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Users" Member="Users">
     <Type Name="User">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="isAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="isRISAdmin" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="isManager" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
@@ -316,22 +332,9 @@
       <Column Name="isCoderAssignable" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="isCoderLimited" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
       <Column Name="RadGroup" Type="System.Int32" DbType="Int" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.RadGroup" Member="RadGroups">
-    <Type Name="RadGroup">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="Description" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="dbo.UsersLog" Member="UsersLogs">
-    <Type Name="UsersLog">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="SourceID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="Description" Type="System.String" DbType="VarChar(2000)" CanBeNull="true" />
-      <Column Name="CreatedByID" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
-      <Column Name="Created" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="TypeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DefaultRole" Type="System.String" DbType="Char(12)" CanBeNull="true" />
+      <Column Name="IdentityID" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="isFollowUpEnabled" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
   </Table>
   <Function Name="dbo.fCurrentWorkflow" Method="fCurrentWorkflow" IsComposable="true">
@@ -1467,27 +1470,6 @@
       <Column Name="Description" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="dbo.sGetPermissions" Method="sGetPermissions">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <ElementType Name="sGetPermissionsResult">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="isAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isRISAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isManager" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isRadiologist" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isRadiologistADI" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isTech" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isClerk" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isTelerad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isPhysician" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isPatient" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="isCoder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="ShortName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="isCoderAssignable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Column Name="RadGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="isCoderLimited" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
   <Function Name="dbo.sGetUsers" Method="sGetUsers">
     <ElementType Name="sGetUsersResult">
       <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -1534,25 +1516,6 @@
       <Column Name="RVUs" Type="System.Double" DbType="Float" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="dbo.sSetPermissions" Method="sSetPermissions">
-    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
-    <Parameter Name="isAdmin" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isRISAdmin" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isManager" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isRadiologist" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isRadiologistADI" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isTech" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isClerk" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isTelerad" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isPhysician" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isPatient" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="isCoder" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="ShortName" Parameter="shortName" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="isCoderAssignable" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="RadGroup" Parameter="radGroup" Type="System.Int32" DbType="Int" />
-    <Parameter Name="isCoderLimited" Type="System.Boolean" DbType="Bit" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="dbo.sUsersLogBySource" Method="sUsersLogBySource">
     <Parameter Name="source" Type="System.Int64" DbType="BigInt" />
     <ElementType Name="sUsersLogBySourceResult">
@@ -1594,5 +1557,47 @@
       <Column Name="TotalExams" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="TotalRVUs" Type="System.Double" DbType="Float" CanBeNull="true" />
     </ElementType>
+  </Function>
+  <Function Name="dbo.sGetPermissions" Method="sGetPermissions">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <ElementType Name="sGetPermissionsResult">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isRISAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isManager" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isRadiologist" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isRadiologistADI" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isTech" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isClerk" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isTelerad" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isPhysician" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isPatient" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isCoder" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="ShortName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="isCoderAssignable" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="RadGroup" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="isCoderLimited" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="isFollowUpEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sSetPermissions" Method="sSetPermissions">
+    <Parameter Name="ID" Parameter="iD" Type="System.Int32" DbType="Int" />
+    <Parameter Name="isAdmin" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isRISAdmin" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isManager" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isRadiologist" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isRadiologistADI" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isTech" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isClerk" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isTelerad" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isPhysician" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isPatient" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isCoder" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="ShortName" Parameter="shortName" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="isCoderAssignable" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="RadGroup" Parameter="radGroup" Type="System.Int32" DbType="Int" />
+    <Parameter Name="isCoderLimited" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="isFollowUpEnabled" Type="System.Boolean" DbType="Bit" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

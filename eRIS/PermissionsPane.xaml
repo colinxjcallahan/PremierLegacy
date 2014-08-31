@@ -48,6 +48,7 @@
                 <RowDefinition Height="35" />
                 <RowDefinition Height="35" />
                 <RowDefinition Height="35" />
+                <RowDefinition Height="35" />
                 <RowDefinition Height="40" />
             </Grid.RowDefinitions>
             <TextBlock x:Name="detailTitle" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="5,5,5,5" FontFamily="Arial" FontSize="14" FontWeight="Bold" />
@@ -83,11 +84,18 @@
             <CheckBox x:Name="isCoder" Grid.Row="12" Grid.Column="2" HorizontalAlignment="Left" Margin="5,5,5,5" TabIndex="0" Checked="enableUpdate" Unchecked="enableUpdate" />
             <TextBlock Grid.Row="13" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Text="Coder Can Assign Reports:" Margin="5,5,5,5" FontFamily="Arial" />
             <CheckBox x:Name="isCoderAssignable" Grid.Row="13" Grid.Column="2" HorizontalAlignment="Left" Margin="5,5,5,5" TabIndex="0" Checked="enableUpdate" Unchecked="enableUpdate" />
-            <TextBlock Grid.Row="14" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Text="Restrict To Limited Coding:" Margin="5,5,5,5" FontFamily="Arial" />
+            
+            <TextBlock Grid.Row="14" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Text="Restrict To Limited Coding:" Margin="5,5,5,5" FontFamily="Arial" />            
             <CheckBox x:Name="isCoderLimited" Grid.Row="14" Grid.Column="2" HorizontalAlignment="Left" Margin="5,5,5,5" TabIndex="0" Checked="enableUpdate" Unchecked="enableUpdate" />
-            <TextBlock Grid.Row="15" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Text="Short Name:" Margin="5,5,5,5" FontFamily="Arial" />
-            <TextBox x:Name="shortName" Grid.Row="15" Grid.Column="2" HorizontalAlignment="Left" Width="200" Margin="5,5,5,5" TabIndex="0" TextChanged="enableUpdate" />
-            <Button Name="btnUpdate" Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2" Width="150" Margin="5,5,5,5" Content="Update" Click="btnUpdate_Click" />
+
+            <TextBlock Grid.Row="15" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Text="Can Process Follow-ups:" Margin="5,5,5,5" FontFamily="Arial" />
+            <CheckBox x:Name="isFollowUpEnabled" Grid.Row="15" Grid.Column="2" HorizontalAlignment="Left" Margin="5,5,5,5" TabIndex="0" Checked="enableUpdate" Unchecked="enableUpdate" />
+
+
+
+            <TextBlock Grid.Row="16" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Right" Text="Short Name:" Margin="5,5,5,5" FontFamily="Arial" />
+            <TextBox x:Name="shortName" Grid.Row="16" Grid.Column="2" HorizontalAlignment="Left" Width="200" Margin="5,5,5,5" TabIndex="0" TextChanged="enableUpdate" />
+            <Button Name="btnUpdate" Grid.Row="17" Grid.Column="0" Grid.ColumnSpan="2" Width="150" Margin="5,5,5,5" Content="Update" Click="btnUpdate_Click" />
         </Grid>
     </Grid>
 </telerikDocking:RadDocumentPane>

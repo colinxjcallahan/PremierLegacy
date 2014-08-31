@@ -9,9 +9,9 @@
             </customBinding>
         </bindings>
         <client>
-            <endpoint address="https://eris.premierradiology.com/eRISService.svc"
-                binding="customBinding" bindingConfiguration="CustomBinding_eRISService"
-                contract="eRISServiceReference.eRISService" name="CustomBinding_eRISService" />
+            <endpoint address="../eRISService.svc" binding="customBinding"
+                bindingConfiguration="CustomBinding_eRISService" contract="eRISServiceReference.eRISService"
+                name="CustomBinding_eRISService" />
         </client>
     </system.serviceModel>
 </configuration>

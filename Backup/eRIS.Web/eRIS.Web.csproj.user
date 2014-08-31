@@ -24,7 +24,7 @@
           <EnableENC>False</EnableENC>
           <AlwaysStartWebServerOnDebug>True</AlwaysStartWebServerOnDebug>
           <ProjectOutputReferences>
-            <Ref Project="{C2D21B7A-C5B9-4B9C-A764-A64E64046BBF}" Folder="ClientBin">eRIS.xap|Microsoft.CSharp.zip|System.ComponentModel.Composition.zip|System.ComponentModel.DataAnnotations.zip|System.Data.Services.Client.zip|System.Json.zip|System.ServiceModel.DomainServices.Client.Web.zip|System.ServiceModel.DomainServices.Client.zip|System.Windows.Controls.Navigation.zip|System.Windows.Controls.zip|System.Windows.Data.zip|System.Xml.Linq.zip|Telerik.Windows.Controls.Charting.zip|Telerik.Windows.Controls.Data.zip|Telerik.Windows.Controls.DataServices.zip|Telerik.Windows.Controls.DataVisualization.zip|Telerik.Windows.Controls.Docking.zip|Telerik.Windows.Controls.DomainServices.zip|Telerik.Windows.Controls.Expressions.zip|Telerik.Windows.Controls.GridView.zip|Telerik.Windows.Controls.Input.zip|Telerik.Windows.Controls.MediaPlayer.zip|Telerik.Windows.Controls.Navigation.zip|Telerik.Windows.Controls.zip|Telerik.Windows.Data.zip|Telerik.Windows.Documents.zip|Telerik.Windows.Themes.Expression_Dark.zip|Telerik.Windows.Themes.Metro.zip</Ref>
+            <Ref Project="{C2D21B7A-C5B9-4B9C-A764-A64E64046BBF}" Folder="ClientBin">eRIS.xap|System.ComponentModel.DataAnnotations.zip|System.Data.Services.Client.zip|System.Json.zip|System.ServiceModel.DomainServices.Client.Web.zip|System.ServiceModel.DomainServices.Client.zip|System.Windows.Controls.Navigation.zip|System.Windows.Controls.zip|System.Windows.Data.zip|System.Xml.Linq.zip</Ref>
           </ProjectOutputReferences>
         </WebProjectProperties>
       </FlavorProperties>

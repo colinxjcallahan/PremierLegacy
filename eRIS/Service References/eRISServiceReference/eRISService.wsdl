@@ -1,620 +1,653 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="eRISService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
-  <wsp:Policy wsu:Id="CustomBinding_eRISService_policy">
-    <wsp:ExactlyOne>
-      <wsp:All>
-        <msb:BinaryEncoding xmlns:msb="http://schemas.microsoft.com/ws/06/2004/mspolicy/netbinary1" />
-        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
-          <wsp:Policy>
-            <sp:TransportToken>
-              <wsp:Policy>
-                <sp:HttpsToken RequireClientCertificate="false" />
-              </wsp:Policy>
-            </sp:TransportToken>
-            <sp:AlgorithmSuite>
-              <wsp:Policy>
-                <sp:Basic256 />
-              </wsp:Policy>
-            </sp:AlgorithmSuite>
-            <sp:Layout>
-              <wsp:Policy>
-                <sp:Strict />
-              </wsp:Policy>
-            </sp:Layout>
-          </wsp:Policy>
-        </sp:TransportBinding>
-        <wsaw:UsingAddressing />
-      </wsp:All>
-    </wsp:ExactlyOne>
-  </wsp:Policy>
-  <wsdl:import namespace="" location="https://eris.premierradiology.com/eRISService.svc?wsdl=wsdl0" />
-  <wsdl:types />
-  <wsdl:binding name="CustomBinding_eRISService" type="eRISService">
-    <wsp:PolicyReference URI="#CustomBinding_eRISService_policy" />
-    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="/Imports">
+      <xsd:import schemaLocation="https://devbox/eRISService.svc?xsd=xsd0" />
+      <xsd:import schemaLocation="https://devbox/eRISService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://devbox/eRISService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/eRIS.Web" />
+      <xsd:import schemaLocation="https://devbox/eRISService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="eRISService_GetUserName_InputMessage">
+    <wsdl:part name="parameters" element="GetUserName" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUserName_OutputMessage">
+    <wsdl:part name="parameters" element="GetUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetCurrentWorkflow_InputMessage">
+    <wsdl:part name="parameters" element="GetCurrentWorkflow" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetCurrentWorkflow_OutputMessage">
+    <wsdl:part name="parameters" element="GetCurrentWorkflowResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetCurrentWorkflowDetails_InputMessage">
+    <wsdl:part name="parameters" element="GetCurrentWorkflowDetails" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetCurrentWorkflowDetails_OutputMessage">
+    <wsdl:part name="parameters" element="GetCurrentWorkflowDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPermissions_InputMessage">
+    <wsdl:part name="parameters" element="GetPermissions" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPermissions_OutputMessage">
+    <wsdl:part name="parameters" element="GetPermissionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPersonnel_InputMessage">
+    <wsdl:part name="parameters" element="GetPersonnel" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPersonnel_OutputMessage">
+    <wsdl:part name="parameters" element="GetPersonnelResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUsers_InputMessage">
+    <wsdl:part name="parameters" element="GetUsers" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUsers_OutputMessage">
+    <wsdl:part name="parameters" element="GetUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_Login_InputMessage">
+    <wsdl:part name="parameters" element="Login" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_Login_OutputMessage">
+    <wsdl:part name="parameters" element="LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetPermissions_InputMessage">
+    <wsdl:part name="parameters" element="SetPermissions" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetPermissions_OutputMessage">
+    <wsdl:part name="parameters" element="SetPermissionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetStudiesReadPerDay_InputMessage">
+    <wsdl:part name="parameters" element="GetStudiesReadPerDay" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetStudiesReadPerDay_OutputMessage">
+    <wsdl:part name="parameters" element="GetStudiesReadPerDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetStudiesReadPerHour_InputMessage">
+    <wsdl:part name="parameters" element="GetStudiesReadPerHour" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetStudiesReadPerHour_OutputMessage">
+    <wsdl:part name="parameters" element="GetStudiesReadPerHourResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetRadGroup_InputMessage">
+    <wsdl:part name="parameters" element="GetRadGroup" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetRadGroup_OutputMessage">
+    <wsdl:part name="parameters" element="GetRadGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_InsertUsersLog_InputMessage">
+    <wsdl:part name="parameters" element="InsertUsersLog" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_InsertUsersLog_OutputMessage">
+    <wsdl:part name="parameters" element="InsertUsersLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUsersLogPerDay_InputMessage">
+    <wsdl:part name="parameters" element="GetUsersLogPerDay" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUsersLogPerDay_OutputMessage">
+    <wsdl:part name="parameters" element="GetUsersLogPerDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUsersLogPerSource_InputMessage">
+    <wsdl:part name="parameters" element="GetUsersLogPerSource" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUsersLogPerSource_OutputMessage">
+    <wsdl:part name="parameters" element="GetUsersLogPerSourceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUsersLogByUser_InputMessage">
+    <wsdl:part name="parameters" element="GetUsersLogByUser" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetUsersLogByUser_OutputMessage">
+    <wsdl:part name="parameters" element="GetUsersLogByUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetMessagesLogPerDay_InputMessage">
+    <wsdl:part name="parameters" element="GetMessagesLogPerDay" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetMessagesLogPerDay_OutputMessage">
+    <wsdl:part name="parameters" element="GetMessagesLogPerDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetLayout_InputMessage">
+    <wsdl:part name="parameters" element="SetLayout" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetLayout_OutputMessage">
+    <wsdl:part name="parameters" element="SetLayoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetTurnaroundTime_InputMessage">
+    <wsdl:part name="parameters" element="GetTurnaroundTime" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetTurnaroundTime_OutputMessage">
+    <wsdl:part name="parameters" element="GetTurnaroundTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetInterpretationTime_InputMessage">
+    <wsdl:part name="parameters" element="GetInterpretationTime" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetInterpretationTime_OutputMessage">
+    <wsdl:part name="parameters" element="GetInterpretationTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPatientLongWait_InputMessage">
+    <wsdl:part name="parameters" element="GetPatientLongWait" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPatientLongWait_OutputMessage">
+    <wsdl:part name="parameters" element="GetPatientLongWaitResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPatientShortWait_InputMessage">
+    <wsdl:part name="parameters" element="GetPatientShortWait" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPatientShortWait_OutputMessage">
+    <wsdl:part name="parameters" element="GetPatientShortWaitResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPatientWait_InputMessage">
+    <wsdl:part name="parameters" element="GetPatientWait" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetPatientWait_OutputMessage">
+    <wsdl:part name="parameters" element="GetPatientWaitResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetCompletedPerTech_InputMessage">
+    <wsdl:part name="parameters" element="GetCompletedPerTech" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetCompletedPerTech_OutputMessage">
+    <wsdl:part name="parameters" element="GetCompletedPerTechResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetRegisteredPatients_InputMessage">
+    <wsdl:part name="parameters" element="GetRegisteredPatients" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetRegisteredPatients_OutputMessage">
+    <wsdl:part name="parameters" element="GetRegisteredPatientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetRegistrationTime_InputMessage">
+    <wsdl:part name="parameters" element="GetRegistrationTime" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetRegistrationTime_OutputMessage">
+    <wsdl:part name="parameters" element="GetRegistrationTimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetFirstLastAppointment_InputMessage">
+    <wsdl:part name="parameters" element="GetFirstLastAppointment" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetFirstLastAppointment_OutputMessage">
+    <wsdl:part name="parameters" element="GetFirstLastAppointmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetScheduledPatients_InputMessage">
+    <wsdl:part name="parameters" element="GetScheduledPatients" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetScheduledPatients_OutputMessage">
+    <wsdl:part name="parameters" element="GetScheduledPatientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetOrdersPending_InputMessage">
+    <wsdl:part name="parameters" element="GetOrdersPending" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetOrdersPending_OutputMessage">
+    <wsdl:part name="parameters" element="GetOrdersPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListOrdersPending_InputMessage">
+    <wsdl:part name="parameters" element="ListOrdersPending" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListOrdersPending_OutputMessage">
+    <wsdl:part name="parameters" element="ListOrdersPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetOrdersPending_InputMessage">
+    <wsdl:part name="parameters" element="SetOrdersPending" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetOrdersPending_OutputMessage">
+    <wsdl:part name="parameters" element="SetOrdersPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetInterfaceXref_InputMessage">
+    <wsdl:part name="parameters" element="GetInterfaceXref" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetInterfaceXref_OutputMessage">
+    <wsdl:part name="parameters" element="GetInterfaceXrefResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListInterfaceXref_InputMessage">
+    <wsdl:part name="parameters" element="ListInterfaceXref" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListInterfaceXref_OutputMessage">
+    <wsdl:part name="parameters" element="ListInterfaceXrefResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetInterfaceXref_InputMessage">
+    <wsdl:part name="parameters" element="SetInterfaceXref" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetInterfaceXref_OutputMessage">
+    <wsdl:part name="parameters" element="SetInterfaceXrefResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListInterface_InputMessage">
+    <wsdl:part name="parameters" element="ListInterface" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListInterface_OutputMessage">
+    <wsdl:part name="parameters" element="ListInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListPatients_InputMessage">
+    <wsdl:part name="parameters" element="ListPatients" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListPatients_OutputMessage">
+    <wsdl:part name="parameters" element="ListPatientsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListProcedures_InputMessage">
+    <wsdl:part name="parameters" element="ListProcedures" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListProcedures_OutputMessage">
+    <wsdl:part name="parameters" element="ListProceduresResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListProviders_InputMessage">
+    <wsdl:part name="parameters" element="ListProviders" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListProviders_OutputMessage">
+    <wsdl:part name="parameters" element="ListProvidersResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListReferrers_InputMessage">
+    <wsdl:part name="parameters" element="ListReferrers" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListReferrers_OutputMessage">
+    <wsdl:part name="parameters" element="ListReferrersResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_MessagesSummary_InputMessage">
+    <wsdl:part name="parameters" element="MessagesSummary" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_MessagesSummary_OutputMessage">
+    <wsdl:part name="parameters" element="MessagesSummaryResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_PhyCoderTotals_InputMessage">
+    <wsdl:part name="parameters" element="PhyCoderTotals" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_PhyCoderTotals_OutputMessage">
+    <wsdl:part name="parameters" element="PhyCoderTotalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_PhyCoderReports_InputMessage">
+    <wsdl:part name="parameters" element="PhyCoderReports" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_PhyCoderReports_OutputMessage">
+    <wsdl:part name="parameters" element="PhyCoderReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_PhyCoderOrders_InputMessage">
+    <wsdl:part name="parameters" element="PhyCoderOrders" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_PhyCoderOrders_OutputMessage">
+    <wsdl:part name="parameters" element="PhyCoderOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetDemographics_InputMessage">
+    <wsdl:part name="parameters" element="GetDemographics" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetDemographics_OutputMessage">
+    <wsdl:part name="parameters" element="GetDemographicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetOrders_InputMessage">
+    <wsdl:part name="parameters" element="GetOrders" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetOrders_OutputMessage">
+    <wsdl:part name="parameters" element="GetOrdersResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetReport_InputMessage">
+    <wsdl:part name="parameters" element="GetReport" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetReport_OutputMessage">
+    <wsdl:part name="parameters" element="GetReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetOrder_InputMessage">
+    <wsdl:part name="parameters" element="GetOrder" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetOrder_OutputMessage">
+    <wsdl:part name="parameters" element="GetOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetReports_InputMessage">
+    <wsdl:part name="parameters" element="GetReports" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetReports_OutputMessage">
+    <wsdl:part name="parameters" element="GetReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetDuplicateReports_InputMessage">
+    <wsdl:part name="parameters" element="GetDuplicateReports" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetDuplicateReports_OutputMessage">
+    <wsdl:part name="parameters" element="GetDuplicateReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetReport_InputMessage">
+    <wsdl:part name="parameters" element="SetReport" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetReport_OutputMessage">
+    <wsdl:part name="parameters" element="SetReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_UpdateReport_InputMessage">
+    <wsdl:part name="parameters" element="UpdateReport" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_UpdateReport_OutputMessage">
+    <wsdl:part name="parameters" element="UpdateReportResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_fSplitHL7GPMS_InputMessage">
+    <wsdl:part name="parameters" element="fSplitHL7GPMS" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_fSplitHL7GPMS_OutputMessage">
+    <wsdl:part name="parameters" element="fSplitHL7GPMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetReportsCodedPerDay_InputMessage">
+    <wsdl:part name="parameters" element="GetReportsCodedPerDay" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetReportsCodedPerDay_OutputMessage">
+    <wsdl:part name="parameters" element="GetReportsCodedPerDayResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetPending_InputMessage">
+    <wsdl:part name="parameters" element="SetPending" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetPending_OutputMessage">
+    <wsdl:part name="parameters" element="SetPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ClearPending_InputMessage">
+    <wsdl:part name="parameters" element="ClearPending" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ClearPending_OutputMessage">
+    <wsdl:part name="parameters" element="ClearPendingResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListICD9_InputMessage">
+    <wsdl:part name="parameters" element="ListICD9" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_ListICD9_OutputMessage">
+    <wsdl:part name="parameters" element="ListICD9Response" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetMessagesLog_InputMessage">
+    <wsdl:part name="parameters" element="SetMessagesLog" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetMessagesLog_OutputMessage">
+    <wsdl:part name="parameters" element="SetMessagesLogResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_MarkDeleted_InputMessage">
+    <wsdl:part name="parameters" element="MarkDeleted" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_MarkDeleted_OutputMessage">
+    <wsdl:part name="parameters" element="MarkDeletedResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetToCode_InputMessage">
+    <wsdl:part name="parameters" element="GetToCode" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetToCode_OutputMessage">
+    <wsdl:part name="parameters" element="GetToCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetExamNumber_InputMessage">
+    <wsdl:part name="parameters" element="SetExamNumber" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetExamNumber_OutputMessage">
+    <wsdl:part name="parameters" element="SetExamNumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetRad_InputMessage">
+    <wsdl:part name="parameters" element="SetRad" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_SetRad_OutputMessage">
+    <wsdl:part name="parameters" element="SetRadResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_BioImagingReports_InputMessage">
+    <wsdl:part name="parameters" element="BioImagingReports" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_BioImagingReports_OutputMessage">
+    <wsdl:part name="parameters" element="BioImagingReportsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_CoderTotals_InputMessage">
+    <wsdl:part name="parameters" element="CoderTotals" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_CoderTotals_OutputMessage">
+    <wsdl:part name="parameters" element="CoderTotalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetExamComments_InputMessage">
+    <wsdl:part name="parameters" element="GetExamComments" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetExamComments_OutputMessage">
+    <wsdl:part name="parameters" element="GetExamCommentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetExamDocuments_InputMessage">
+    <wsdl:part name="parameters" element="GetExamDocuments" />
+  </wsdl:message>
+  <wsdl:message name="eRISService_GetExamDocuments_OutputMessage">
+    <wsdl:part name="parameters" element="GetExamDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="eRISService">
     <wsdl:operation name="GetUserName">
-      <soap12:operation soapAction="urn:eRISService/GetUserName" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetUserName" message="eRISService_GetUserName_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetUserNameResponse" message="eRISService_GetUserName_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetCurrentWorkflow">
-      <soap12:operation soapAction="urn:eRISService/GetCurrentWorkflow" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetCurrentWorkflow" message="eRISService_GetCurrentWorkflow_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetCurrentWorkflowResponse" message="eRISService_GetCurrentWorkflow_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetCurrentWorkflowDetails">
-      <soap12:operation soapAction="urn:eRISService/GetCurrentWorkflowDetails" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetCurrentWorkflowDetails" message="eRISService_GetCurrentWorkflowDetails_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetCurrentWorkflowDetailsResponse" message="eRISService_GetCurrentWorkflowDetails_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetPermissions">
-      <soap12:operation soapAction="urn:eRISService/GetPermissions" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetPermissions" message="eRISService_GetPermissions_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetPermissionsResponse" message="eRISService_GetPermissions_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetPersonnel">
-      <soap12:operation soapAction="urn:eRISService/GetPersonnel" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetPersonnel" message="eRISService_GetPersonnel_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetPersonnelResponse" message="eRISService_GetPersonnel_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetUsers">
-      <soap12:operation soapAction="urn:eRISService/GetUsers" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetUsers" message="eRISService_GetUsers_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetUsersResponse" message="eRISService_GetUsers_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="Login">
-      <soap12:operation soapAction="urn:eRISService/Login" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/Login" message="eRISService_Login_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/LoginResponse" message="eRISService_Login_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetPermissions">
-      <soap12:operation soapAction="urn:eRISService/SetPermissions" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetPermissions" message="eRISService_SetPermissions_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetPermissionsResponse" message="eRISService_SetPermissions_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetStudiesReadPerDay">
-      <soap12:operation soapAction="urn:eRISService/GetStudiesReadPerDay" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetStudiesReadPerDay" message="eRISService_GetStudiesReadPerDay_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetStudiesReadPerDayResponse" message="eRISService_GetStudiesReadPerDay_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetStudiesReadPerHour">
-      <soap12:operation soapAction="urn:eRISService/GetStudiesReadPerHour" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetStudiesReadPerHour" message="eRISService_GetStudiesReadPerHour_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetStudiesReadPerHourResponse" message="eRISService_GetStudiesReadPerHour_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetRadGroup">
-      <soap12:operation soapAction="urn:eRISService/GetRadGroup" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetRadGroup" message="eRISService_GetRadGroup_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetRadGroupResponse" message="eRISService_GetRadGroup_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="InsertUsersLog">
-      <soap12:operation soapAction="urn:eRISService/InsertUsersLog" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/InsertUsersLog" message="eRISService_InsertUsersLog_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/InsertUsersLogResponse" message="eRISService_InsertUsersLog_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetUsersLogPerDay">
-      <soap12:operation soapAction="urn:eRISService/GetUsersLogPerDay" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetUsersLogPerDay" message="eRISService_GetUsersLogPerDay_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetUsersLogPerDayResponse" message="eRISService_GetUsersLogPerDay_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetUsersLogPerSource">
-      <soap12:operation soapAction="urn:eRISService/GetUsersLogPerSource" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetUsersLogPerSource" message="eRISService_GetUsersLogPerSource_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetUsersLogPerSourceResponse" message="eRISService_GetUsersLogPerSource_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetUsersLogByUser">
-      <soap12:operation soapAction="urn:eRISService/GetUsersLogByUser" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetUsersLogByUser" message="eRISService_GetUsersLogByUser_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetUsersLogByUserResponse" message="eRISService_GetUsersLogByUser_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetMessagesLogPerDay">
-      <soap12:operation soapAction="urn:eRISService/GetMessagesLogPerDay" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetMessagesLogPerDay" message="eRISService_GetMessagesLogPerDay_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetMessagesLogPerDayResponse" message="eRISService_GetMessagesLogPerDay_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetLayout">
-      <soap12:operation soapAction="urn:eRISService/SetLayout" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetLayout" message="eRISService_SetLayout_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetLayoutResponse" message="eRISService_SetLayout_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetTurnaroundTime">
-      <soap12:operation soapAction="urn:eRISService/GetTurnaroundTime" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetTurnaroundTime" message="eRISService_GetTurnaroundTime_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetTurnaroundTimeResponse" message="eRISService_GetTurnaroundTime_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetInterpretationTime">
-      <soap12:operation soapAction="urn:eRISService/GetInterpretationTime" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetInterpretationTime" message="eRISService_GetInterpretationTime_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetInterpretationTimeResponse" message="eRISService_GetInterpretationTime_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetPatientLongWait">
-      <soap12:operation soapAction="urn:eRISService/GetPatientLongWait" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetPatientLongWait" message="eRISService_GetPatientLongWait_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetPatientLongWaitResponse" message="eRISService_GetPatientLongWait_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetPatientShortWait">
-      <soap12:operation soapAction="urn:eRISService/GetPatientShortWait" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetPatientShortWait" message="eRISService_GetPatientShortWait_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetPatientShortWaitResponse" message="eRISService_GetPatientShortWait_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetPatientWait">
-      <soap12:operation soapAction="urn:eRISService/GetPatientWait" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetPatientWait" message="eRISService_GetPatientWait_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetPatientWaitResponse" message="eRISService_GetPatientWait_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetCompletedPerTech">
-      <soap12:operation soapAction="urn:eRISService/GetCompletedPerTech" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetCompletedPerTech" message="eRISService_GetCompletedPerTech_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetCompletedPerTechResponse" message="eRISService_GetCompletedPerTech_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetRegisteredPatients">
-      <soap12:operation soapAction="urn:eRISService/GetRegisteredPatients" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetRegisteredPatients" message="eRISService_GetRegisteredPatients_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetRegisteredPatientsResponse" message="eRISService_GetRegisteredPatients_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetRegistrationTime">
-      <soap12:operation soapAction="urn:eRISService/GetRegistrationTime" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetRegistrationTime" message="eRISService_GetRegistrationTime_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetRegistrationTimeResponse" message="eRISService_GetRegistrationTime_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetFirstLastAppointment">
-      <soap12:operation soapAction="urn:eRISService/GetFirstLastAppointment" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetFirstLastAppointment" message="eRISService_GetFirstLastAppointment_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetFirstLastAppointmentResponse" message="eRISService_GetFirstLastAppointment_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetScheduledPatients">
-      <soap12:operation soapAction="urn:eRISService/GetScheduledPatients" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetScheduledPatients" message="eRISService_GetScheduledPatients_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetScheduledPatientsResponse" message="eRISService_GetScheduledPatients_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetOrdersPending">
-      <soap12:operation soapAction="urn:eRISService/GetOrdersPending" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetOrdersPending" message="eRISService_GetOrdersPending_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetOrdersPendingResponse" message="eRISService_GetOrdersPending_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListOrdersPending">
-      <soap12:operation soapAction="urn:eRISService/ListOrdersPending" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ListOrdersPending" message="eRISService_ListOrdersPending_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ListOrdersPendingResponse" message="eRISService_ListOrdersPending_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetOrdersPending">
-      <soap12:operation soapAction="urn:eRISService/SetOrdersPending" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetOrdersPending" message="eRISService_SetOrdersPending_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetOrdersPendingResponse" message="eRISService_SetOrdersPending_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetInterfaceXref">
-      <soap12:operation soapAction="urn:eRISService/GetInterfaceXref" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetInterfaceXref" message="eRISService_GetInterfaceXref_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetInterfaceXrefResponse" message="eRISService_GetInterfaceXref_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListInterfaceXref">
-      <soap12:operation soapAction="urn:eRISService/ListInterfaceXref" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ListInterfaceXref" message="eRISService_ListInterfaceXref_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ListInterfaceXrefResponse" message="eRISService_ListInterfaceXref_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetInterfaceXref">
-      <soap12:operation soapAction="urn:eRISService/SetInterfaceXref" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetInterfaceXref" message="eRISService_SetInterfaceXref_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetInterfaceXrefResponse" message="eRISService_SetInterfaceXref_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListInterface">
-      <soap12:operation soapAction="urn:eRISService/ListInterface" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ListInterface" message="eRISService_ListInterface_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ListInterfaceResponse" message="eRISService_ListInterface_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListPatients">
-      <soap12:operation soapAction="urn:eRISService/ListPatients" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ListPatients" message="eRISService_ListPatients_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ListPatientsResponse" message="eRISService_ListPatients_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListProcedures">
-      <soap12:operation soapAction="urn:eRISService/ListProcedures" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ListProcedures" message="eRISService_ListProcedures_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ListProceduresResponse" message="eRISService_ListProcedures_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListProviders">
-      <soap12:operation soapAction="urn:eRISService/ListProviders" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ListProviders" message="eRISService_ListProviders_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ListProvidersResponse" message="eRISService_ListProviders_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListReferrers">
-      <soap12:operation soapAction="urn:eRISService/ListReferrers" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ListReferrers" message="eRISService_ListReferrers_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ListReferrersResponse" message="eRISService_ListReferrers_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="MessagesSummary">
-      <soap12:operation soapAction="urn:eRISService/MessagesSummary" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/MessagesSummary" message="eRISService_MessagesSummary_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/MessagesSummaryResponse" message="eRISService_MessagesSummary_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="PhyCoderTotals">
-      <soap12:operation soapAction="urn:eRISService/PhyCoderTotals" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/PhyCoderTotals" message="eRISService_PhyCoderTotals_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/PhyCoderTotalsResponse" message="eRISService_PhyCoderTotals_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="PhyCoderReports">
-      <soap12:operation soapAction="urn:eRISService/PhyCoderReports" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/PhyCoderReports" message="eRISService_PhyCoderReports_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/PhyCoderReportsResponse" message="eRISService_PhyCoderReports_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="PhyCoderOrders">
-      <soap12:operation soapAction="urn:eRISService/PhyCoderOrders" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/PhyCoderOrders" message="eRISService_PhyCoderOrders_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/PhyCoderOrdersResponse" message="eRISService_PhyCoderOrders_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDemographics">
-      <soap12:operation soapAction="urn:eRISService/GetDemographics" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetDemographics" message="eRISService_GetDemographics_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetDemographicsResponse" message="eRISService_GetDemographics_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetOrders">
-      <soap12:operation soapAction="urn:eRISService/GetOrders" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetOrders" message="eRISService_GetOrders_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetOrdersResponse" message="eRISService_GetOrders_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetReport">
-      <soap12:operation soapAction="urn:eRISService/GetReport" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetReport" message="eRISService_GetReport_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetReportResponse" message="eRISService_GetReport_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetOrder">
-      <soap12:operation soapAction="urn:eRISService/GetOrder" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetOrder" message="eRISService_GetOrder_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetOrderResponse" message="eRISService_GetOrder_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetReports">
-      <soap12:operation soapAction="urn:eRISService/GetReports" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetReports" message="eRISService_GetReports_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetReportsResponse" message="eRISService_GetReports_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetDuplicateReports">
-      <soap12:operation soapAction="urn:eRISService/GetDuplicateReports" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetDuplicateReports" message="eRISService_GetDuplicateReports_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetDuplicateReportsResponse" message="eRISService_GetDuplicateReports_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetReport">
-      <soap12:operation soapAction="urn:eRISService/SetReport" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetReport" message="eRISService_SetReport_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetReportResponse" message="eRISService_SetReport_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="UpdateReport">
-      <soap12:operation soapAction="urn:eRISService/UpdateReport" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/UpdateReport" message="eRISService_UpdateReport_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/UpdateReportResponse" message="eRISService_UpdateReport_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="fSplitHL7GPMS">
-      <soap12:operation soapAction="urn:eRISService/fSplitHL7GPMS" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/fSplitHL7GPMS" message="eRISService_fSplitHL7GPMS_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/fSplitHL7GPMSResponse" message="eRISService_fSplitHL7GPMS_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetReportsCodedPerDay">
-      <soap12:operation soapAction="urn:eRISService/GetReportsCodedPerDay" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetReportsCodedPerDay" message="eRISService_GetReportsCodedPerDay_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetReportsCodedPerDayResponse" message="eRISService_GetReportsCodedPerDay_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetPending">
-      <soap12:operation soapAction="urn:eRISService/SetPending" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetPending" message="eRISService_SetPending_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetPendingResponse" message="eRISService_SetPending_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ClearPending">
-      <soap12:operation soapAction="urn:eRISService/ClearPending" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ClearPending" message="eRISService_ClearPending_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ClearPendingResponse" message="eRISService_ClearPending_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="ListICD9">
-      <soap12:operation soapAction="urn:eRISService/ListICD9" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/ListICD9" message="eRISService_ListICD9_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/ListICD9Response" message="eRISService_ListICD9_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetMessagesLog">
-      <soap12:operation soapAction="urn:eRISService/SetMessagesLog" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetMessagesLog" message="eRISService_SetMessagesLog_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetMessagesLogResponse" message="eRISService_SetMessagesLog_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="MarkDeleted">
-      <soap12:operation soapAction="urn:eRISService/MarkDeleted" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/MarkDeleted" message="eRISService_MarkDeleted_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/MarkDeletedResponse" message="eRISService_MarkDeleted_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetToCode">
-      <soap12:operation soapAction="urn:eRISService/GetToCode" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetToCode" message="eRISService_GetToCode_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetToCodeResponse" message="eRISService_GetToCode_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetExamNumber">
-      <soap12:operation soapAction="urn:eRISService/SetExamNumber" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetExamNumber" message="eRISService_SetExamNumber_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetExamNumberResponse" message="eRISService_SetExamNumber_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="SetRad">
-      <soap12:operation soapAction="urn:eRISService/SetRad" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/SetRad" message="eRISService_SetRad_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/SetRadResponse" message="eRISService_SetRad_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="BioImagingReports">
-      <soap12:operation soapAction="urn:eRISService/BioImagingReports" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/BioImagingReports" message="eRISService_BioImagingReports_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/BioImagingReportsResponse" message="eRISService_BioImagingReports_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="CoderTotals">
-      <soap12:operation soapAction="urn:eRISService/CoderTotals" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/CoderTotals" message="eRISService_CoderTotals_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/CoderTotalsResponse" message="eRISService_CoderTotals_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetExamComments">
-      <soap12:operation soapAction="urn:eRISService/GetExamComments" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetExamComments" message="eRISService_GetExamComments_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetExamCommentsResponse" message="eRISService_GetExamComments_OutputMessage" />
     </wsdl:operation>
     <wsdl:operation name="GetExamDocuments">
-      <soap12:operation soapAction="urn:eRISService/GetExamDocuments" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
+      <wsdl:input wsaw:Action="urn:eRISService/GetExamDocuments" message="eRISService_GetExamDocuments_InputMessage" />
+      <wsdl:output wsaw:Action="urn:eRISService/GetExamDocumentsResponse" message="eRISService_GetExamDocuments_OutputMessage" />
     </wsdl:operation>
-  </wsdl:binding>
-  <wsdl:service name="eRISService">
-    <wsdl:port name="CustomBinding_eRISService" binding="tns:CustomBinding_eRISService">
-      <soap12:address location="https://eris.premierradiology.com/eRISService.svc" />
-      <wsa10:EndpointReference>
-        <wsa10:Address>https://eris.premierradiology.com/eRISService.svc</wsa10:Address>
-      </wsa10:EndpointReference>
-    </wsdl:port>
-  </wsdl:service>
+  </wsdl:portType>
 </wsdl:definitions>

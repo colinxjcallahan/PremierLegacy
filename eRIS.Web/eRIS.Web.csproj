@@ -20,11 +20,11 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <TargetFrameworkProfile />
-    <UseIISExpress>true</UseIISExpress>
-    <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort>44301</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,7 +74,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="clientaccesspolicy.xml" />
+    <Content Include="clientaccesspolicy.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ClientBin\eRIS.xap" />
     <Content Include="Default.aspx" />
     <Content Include="eRISService.svc" />
@@ -119,17 +121,33 @@
     <Content Include="ClientBin\System.Windows.Controls.zip" />
     <Content Include="ClientBin\System.Windows.Controls.Navigation.zip" />
     <Content Include="ClientBin\System.Windows.Data.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.Charting.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.DataVisualization.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.Docking.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.GridView.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.Input.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.Navigation.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Data.zip" />
     <Content Include="ClientBin\System.Xml.Linq.zip" />
     <Content Include="ClientBin\System.ServiceModel.Web.Extensions.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.Data.zip" />
     <Content Include="ClientBin\Telerik.Windows.Controls.Editor.zip" />
     <Content Include="ClientBin\Telerik.Windows.Controls.Gauge.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.MediaPlayer.zip" />
     <Content Include="ClientBin\Telerik.Windows.Controls.RibbonBar.zip" />
     <Content Include="ClientBin\Telerik.Windows.Controls.Scheduler.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Documents.zip" />
     <Content Include="ClientBin\Telerik.Windows.Themes.Summer.zip" />
     <Content Include="ClientBin\Telerik.Windows.Controls.RichTextBoxUI.zip" />
     <Content Include="ClientBin\Telerik.Windows.Documents.FormatProviders.Html.zip" />
     <Content Include="ClientBin\System.ComponentModel.Composition.Initialization.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Themes.Expression_Dark.zip" />
     <Content Include="ClientBin\Telerik.Windows.Controls.Chart.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.DataServices.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.DomainServices.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Controls.Expressions.zip" />
+    <Content Include="ClientBin\Telerik.Windows.Themes.Metro.zip" />
     <None Include="eRISDataClasses.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
       <LastGenOutput>eRISDataClasses.designer.cs</LastGenOutput>
@@ -183,7 +201,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63126</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:63126/</IISUrl>
+          <IISUrl>https://devbox/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>https://eris.premierradiology.com/</CustomServerUrl>

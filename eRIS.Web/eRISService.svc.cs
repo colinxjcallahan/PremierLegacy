@@ -56,10 +56,10 @@ namespace eRIS.Web
             return context.sLogin(username, password, ipAddress).ToList();
         }
         [OperationContract]
-        public void SetPermissions(int id, bool isAdmin, bool isRISAdmin, bool isManager, bool isRadiologist, bool isRadiologistADI, bool isTech, bool isClerk, bool isTelerad, bool isPhysician, bool isPatient, bool isCoder, string ShortName, bool isCoderAssignable, int RadGroup, bool isCoderLimited)
+        public void SetPermissions(int id, bool isAdmin, bool isRISAdmin, bool isManager, bool isRadiologist, bool isRadiologistADI, bool isTech, bool isClerk, bool isTelerad, bool isPhysician, bool isPatient, bool isCoder, string ShortName, bool isCoderAssignable, int RadGroup, bool isCoderLimited, bool isFollowUpEnabled)
         {
             eRISDataClassesDataContext context = new eRISDataClassesDataContext();
-            context.sSetPermissions(id, isAdmin, isRISAdmin, isManager, isRadiologist, isRadiologistADI, isTech, isClerk, isTelerad, isPhysician, isPatient, isCoder, ShortName, isCoderAssignable, RadGroup, isCoderLimited);
+            context.sSetPermissions(id, isAdmin, isRISAdmin, isManager, isRadiologist, isRadiologistADI, isTech, isClerk, isTelerad, isPhysician, isPatient, isCoder, ShortName, isCoderAssignable, RadGroup, isCoderLimited, isFollowUpEnabled);
         }
         [OperationContract]
         public List<sStudiesReadPerDayResult> GetStudiesReadPerDay(DateTime begDate, DateTime endDate, int group)

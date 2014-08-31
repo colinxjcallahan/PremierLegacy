@@ -31,26 +31,6 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Portal", "..\..\WebSites\Po
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Referrer", "..\..\WebSites\Referrer\", "{1A887A04-FDF2-4F05-9713-4F3101E92A94}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/Referrer"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\Referrer\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Referrer\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/Referrer"
-		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\Referrer\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Referrer\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "2374"
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -91,16 +71,6 @@ Global
 		{B90DEFC7-ECFE-4EF7-84B4-DA0C7035437B}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
 		{B90DEFC7-ECFE-4EF7-84B4-DA0C7035437B}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
 		{B90DEFC7-ECFE-4EF7-84B4-DA0C7035437B}.Release|x86.ActiveCfg = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
-		{1A887A04-FDF2-4F05-9713-4F3101E92A94}.Release|x86.ActiveCfg = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

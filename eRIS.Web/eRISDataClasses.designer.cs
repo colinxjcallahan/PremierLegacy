@@ -78,15 +78,15 @@ namespace eRIS.Web
     partial void InsertReport(Report instance);
     partial void UpdateReport(Report instance);
     partial void DeleteReport(Report instance);
-    partial void InsertUser(User instance);
-    partial void UpdateUser(User instance);
-    partial void DeleteUser(User instance);
     partial void InsertRadGroup(RadGroup instance);
     partial void UpdateRadGroup(RadGroup instance);
     partial void DeleteRadGroup(RadGroup instance);
     partial void InsertUsersLog(UsersLog instance);
     partial void UpdateUsersLog(UsersLog instance);
     partial void DeleteUsersLog(UsersLog instance);
+    partial void InsertUser(User instance);
+    partial void UpdateUser(User instance);
+    partial void DeleteUser(User instance);
     #endregion
 		
 		public eRISDataClassesDataContext() : 
@@ -247,14 +247,6 @@ namespace eRIS.Web
 			}
 		}
 		
-		public System.Data.Linq.Table<User> Users
-		{
-			get
-			{
-				return this.GetTable<User>();
-			}
-		}
-		
 		public System.Data.Linq.Table<RadGroup> RadGroups
 		{
 			get
@@ -268,6 +260,14 @@ namespace eRIS.Web
 			get
 			{
 				return this.GetTable<UsersLog>();
+			}
+		}
+		
+		public System.Data.Linq.Table<User> Users
+		{
+			get
+			{
+				return this.GetTable<User>();
 			}
 		}
 		
@@ -931,13 +931,6 @@ namespace eRIS.Web
 			return ((ISingleResult<sGetRadGroupResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sGetPermissions")]
-		public ISingleResult<sGetPermissionsResult> sGetPermissions([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
-			return ((ISingleResult<sGetPermissionsResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sGetUsers")]
 		public ISingleResult<sGetUsersResult> sGetUsers()
 		{
@@ -957,29 +950,6 @@ namespace eRIS.Web
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), begDate, endDate, group);
 			return ((ISingleResult<sStudiesReadPerDayResult>)(result.ReturnValue));
-		}
-		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sSetPermissions")]
-		public int sSetPermissions(
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isAdmin, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isRISAdmin, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isManager, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isRadiologist, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isRadiologistADI, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isTech, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isClerk, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isTelerad, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isPhysician, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isPatient, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isCoder, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ShortName", DbType="VarChar(30)")] string shortName, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isCoderAssignable, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="RadGroup", DbType="Int")] System.Nullable<int> radGroup, 
-					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isCoderLimited)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD, isAdmin, isRISAdmin, isManager, isRadiologist, isRadiologistADI, isTech, isClerk, isTelerad, isPhysician, isPatient, isCoder, shortName, isCoderAssignable, radGroup, isCoderLimited);
-			return ((int)(result.ReturnValue));
 		}
 		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sUsersLogBySource")]
@@ -1008,6 +978,37 @@ namespace eRIS.Web
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), begDate, endDate, rad);
 			return ((ISingleResult<sStudiesReadPerHourResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sGetPermissions")]
+		public ISingleResult<sGetPermissionsResult> sGetPermissions([global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD);
+			return ((ISingleResult<sGetPermissionsResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sSetPermissions")]
+		public int sSetPermissions(
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ID", DbType="Int")] System.Nullable<int> iD, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isAdmin, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isRISAdmin, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isManager, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isRadiologist, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isRadiologistADI, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isTech, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isClerk, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isTelerad, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isPhysician, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isPatient, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isCoder, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="ShortName", DbType="VarChar(30)")] string shortName, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isCoderAssignable, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(Name="RadGroup", DbType="Int")] System.Nullable<int> radGroup, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isCoderLimited, 
+					[global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> isFollowUpEnabled)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD, isAdmin, isRISAdmin, isManager, isRadiologist, isRadiologistADI, isTech, isClerk, isTelerad, isPhysician, isPatient, isCoder, shortName, isCoderAssignable, radGroup, isCoderLimited, isFollowUpEnabled);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	
@@ -7235,6 +7236,274 @@ namespace eRIS.Web
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.RadGroup")]
+	public partial class RadGroup : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private string _Description;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnDescriptionChanging(string value);
+    partial void OnDescriptionChanged();
+    #endregion
+		
+		public RadGroup()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this.OnDescriptionChanging(value);
+					this.SendPropertyChanging();
+					this._Description = value;
+					this.SendPropertyChanged("Description");
+					this.OnDescriptionChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.UsersLog")]
+	public partial class UsersLog : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private System.Nullable<long> _SourceID;
+		
+		private string _Description;
+		
+		private System.Nullable<long> _CreatedByID;
+		
+		private System.Nullable<System.DateTime> _Created;
+		
+		private System.Nullable<int> _TypeID;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnSourceIDChanging(System.Nullable<long> value);
+    partial void OnSourceIDChanged();
+    partial void OnDescriptionChanging(string value);
+    partial void OnDescriptionChanged();
+    partial void OnCreatedByIDChanging(System.Nullable<long> value);
+    partial void OnCreatedByIDChanged();
+    partial void OnCreatedChanging(System.Nullable<System.DateTime> value);
+    partial void OnCreatedChanged();
+    partial void OnTypeIDChanging(System.Nullable<int> value);
+    partial void OnTypeIDChanged();
+    #endregion
+		
+		public UsersLog()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SourceID", DbType="BigInt")]
+		public System.Nullable<long> SourceID
+		{
+			get
+			{
+				return this._SourceID;
+			}
+			set
+			{
+				if ((this._SourceID != value))
+				{
+					this.OnSourceIDChanging(value);
+					this.SendPropertyChanging();
+					this._SourceID = value;
+					this.SendPropertyChanged("SourceID");
+					this.OnSourceIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="VarChar(2000)")]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this.OnDescriptionChanging(value);
+					this.SendPropertyChanging();
+					this._Description = value;
+					this.SendPropertyChanged("Description");
+					this.OnDescriptionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedByID", DbType="BigInt")]
+		public System.Nullable<long> CreatedByID
+		{
+			get
+			{
+				return this._CreatedByID;
+			}
+			set
+			{
+				if ((this._CreatedByID != value))
+				{
+					this.OnCreatedByIDChanging(value);
+					this.SendPropertyChanging();
+					this._CreatedByID = value;
+					this.SendPropertyChanged("CreatedByID");
+					this.OnCreatedByIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Created", DbType="DateTime")]
+		public System.Nullable<System.DateTime> Created
+		{
+			get
+			{
+				return this._Created;
+			}
+			set
+			{
+				if ((this._Created != value))
+				{
+					this.OnCreatedChanging(value);
+					this.SendPropertyChanging();
+					this._Created = value;
+					this.SendPropertyChanged("Created");
+					this.OnCreatedChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TypeID", DbType="Int")]
+		public System.Nullable<int> TypeID
+		{
+			get
+			{
+				return this._TypeID;
+			}
+			set
+			{
+				if ((this._TypeID != value))
+				{
+					this.OnTypeIDChanging(value);
+					this.SendPropertyChanging();
+					this._TypeID = value;
+					this.SendPropertyChanged("TypeID");
+					this.OnTypeIDChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Users")]
 	public partial class User : INotifyPropertyChanging, INotifyPropertyChanged
 	{
@@ -7273,6 +7542,12 @@ namespace eRIS.Web
 		
 		private System.Nullable<int> _RadGroup;
 		
+		private string _DefaultRole;
+		
+		private long _IdentityID;
+		
+		private System.Nullable<bool> _isFollowUpEnabled;
+		
     #region Extensibility Method Definitions
     partial void OnLoaded();
     partial void OnValidate(System.Data.Linq.ChangeAction action);
@@ -7309,6 +7584,12 @@ namespace eRIS.Web
     partial void OnisCoderLimitedChanged();
     partial void OnRadGroupChanging(System.Nullable<int> value);
     partial void OnRadGroupChanged();
+    partial void OnDefaultRoleChanging(string value);
+    partial void OnDefaultRoleChanged();
+    partial void OnIdentityIDChanging(long value);
+    partial void OnIdentityIDChanged();
+    partial void OnisFollowUpEnabledChanging(System.Nullable<bool> value);
+    partial void OnisFollowUpEnabledChanged();
     #endregion
 		
 		public User()
@@ -7316,7 +7597,7 @@ namespace eRIS.Web
 			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
 		public int ID
 		{
 			get
@@ -7636,270 +7917,62 @@ namespace eRIS.Web
 			}
 		}
 		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.RadGroup")]
-	public partial class RadGroup : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _ID;
-		
-		private string _Description;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIDChanging(int value);
-    partial void OnIDChanged();
-    partial void OnDescriptionChanging(string value);
-    partial void OnDescriptionChanged();
-    #endregion
-		
-		public RadGroup()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DefaultRole", DbType="Char(12)")]
+		public string DefaultRole
 		{
 			get
 			{
-				return this._ID;
+				return this._DefaultRole;
 			}
 			set
 			{
-				if ((this._ID != value))
+				if ((this._DefaultRole != value))
 				{
-					this.OnIDChanging(value);
+					this.OnDefaultRoleChanging(value);
 					this.SendPropertyChanging();
-					this._ID = value;
-					this.SendPropertyChanged("ID");
-					this.OnIDChanged();
+					this._DefaultRole = value;
+					this.SendPropertyChanged("DefaultRole");
+					this.OnDefaultRoleChanged();
 				}
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="VarChar(30) NOT NULL", CanBeNull=false)]
-		public string Description
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdentityID", AutoSync=AutoSync.OnInsert, DbType="BigInt NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public long IdentityID
 		{
 			get
 			{
-				return this._Description;
+				return this._IdentityID;
 			}
 			set
 			{
-				if ((this._Description != value))
+				if ((this._IdentityID != value))
 				{
-					this.OnDescriptionChanging(value);
+					this.OnIdentityIDChanging(value);
 					this.SendPropertyChanging();
-					this._Description = value;
-					this.SendPropertyChanged("Description");
-					this.OnDescriptionChanged();
+					this._IdentityID = value;
+					this.SendPropertyChanged("IdentityID");
+					this.OnIdentityIDChanged();
 				}
 			}
 		}
 		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.UsersLog")]
-	public partial class UsersLog : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _ID;
-		
-		private System.Nullable<long> _SourceID;
-		
-		private string _Description;
-		
-		private System.Nullable<long> _CreatedByID;
-		
-		private System.Nullable<System.DateTime> _Created;
-		
-		private System.Nullable<int> _TypeID;
-		
-    #region Extensibility Method Definitions
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIDChanging(int value);
-    partial void OnIDChanged();
-    partial void OnSourceIDChanging(System.Nullable<long> value);
-    partial void OnSourceIDChanged();
-    partial void OnDescriptionChanging(string value);
-    partial void OnDescriptionChanged();
-    partial void OnCreatedByIDChanging(System.Nullable<long> value);
-    partial void OnCreatedByIDChanged();
-    partial void OnCreatedChanging(System.Nullable<System.DateTime> value);
-    partial void OnCreatedChanged();
-    partial void OnTypeIDChanging(System.Nullable<int> value);
-    partial void OnTypeIDChanged();
-    #endregion
-		
-		public UsersLog()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
-		public int ID
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isFollowUpEnabled", DbType="Bit")]
+		public System.Nullable<bool> isFollowUpEnabled
 		{
 			get
 			{
-				return this._ID;
+				return this._isFollowUpEnabled;
 			}
 			set
 			{
-				if ((this._ID != value))
+				if ((this._isFollowUpEnabled != value))
 				{
-					this.OnIDChanging(value);
+					this.OnisFollowUpEnabledChanging(value);
 					this.SendPropertyChanging();
-					this._ID = value;
-					this.SendPropertyChanged("ID");
-					this.OnIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_SourceID", DbType="BigInt")]
-		public System.Nullable<long> SourceID
-		{
-			get
-			{
-				return this._SourceID;
-			}
-			set
-			{
-				if ((this._SourceID != value))
-				{
-					this.OnSourceIDChanging(value);
-					this.SendPropertyChanging();
-					this._SourceID = value;
-					this.SendPropertyChanged("SourceID");
-					this.OnSourceIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="VarChar(2000)")]
-		public string Description
-		{
-			get
-			{
-				return this._Description;
-			}
-			set
-			{
-				if ((this._Description != value))
-				{
-					this.OnDescriptionChanging(value);
-					this.SendPropertyChanging();
-					this._Description = value;
-					this.SendPropertyChanged("Description");
-					this.OnDescriptionChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CreatedByID", DbType="BigInt")]
-		public System.Nullable<long> CreatedByID
-		{
-			get
-			{
-				return this._CreatedByID;
-			}
-			set
-			{
-				if ((this._CreatedByID != value))
-				{
-					this.OnCreatedByIDChanging(value);
-					this.SendPropertyChanging();
-					this._CreatedByID = value;
-					this.SendPropertyChanged("CreatedByID");
-					this.OnCreatedByIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Created", DbType="DateTime")]
-		public System.Nullable<System.DateTime> Created
-		{
-			get
-			{
-				return this._Created;
-			}
-			set
-			{
-				if ((this._Created != value))
-				{
-					this.OnCreatedChanging(value);
-					this.SendPropertyChanging();
-					this._Created = value;
-					this.SendPropertyChanged("Created");
-					this.OnCreatedChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TypeID", DbType="Int")]
-		public System.Nullable<int> TypeID
-		{
-			get
-			{
-				return this._TypeID;
-			}
-			set
-			{
-				if ((this._TypeID != value))
-				{
-					this.OnTypeIDChanging(value);
-					this.SendPropertyChanging();
-					this._TypeID = value;
-					this.SendPropertyChanged("TypeID");
-					this.OnTypeIDChanged();
+					this._isFollowUpEnabled = value;
+					this.SendPropertyChanged("isFollowUpEnabled");
+					this.OnisFollowUpEnabledChanged();
 				}
 			}
 		}
@@ -18251,302 +18324,6 @@ namespace eRIS.Web
 		}
 	}
 	
-	public partial class sGetPermissionsResult
-	{
-		
-		private int _ID;
-		
-		private bool _isAdmin;
-		
-		private bool _isRISAdmin;
-		
-		private bool _isManager;
-		
-		private bool _isRadiologist;
-		
-		private bool _isRadiologistADI;
-		
-		private bool _isTech;
-		
-		private bool _isClerk;
-		
-		private bool _isTelerad;
-		
-		private bool _isPhysician;
-		
-		private bool _isPatient;
-		
-		private bool _isCoder;
-		
-		private string _ShortName;
-		
-		private bool _isCoderAssignable;
-		
-		private int _RadGroup;
-		
-		private bool _isCoderLimited;
-		
-		public sGetPermissionsResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
-		public int ID
-		{
-			get
-			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this._ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isAdmin", DbType="Bit NOT NULL")]
-		public bool isAdmin
-		{
-			get
-			{
-				return this._isAdmin;
-			}
-			set
-			{
-				if ((this._isAdmin != value))
-				{
-					this._isAdmin = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRISAdmin", DbType="Bit NOT NULL")]
-		public bool isRISAdmin
-		{
-			get
-			{
-				return this._isRISAdmin;
-			}
-			set
-			{
-				if ((this._isRISAdmin != value))
-				{
-					this._isRISAdmin = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isManager", DbType="Bit NOT NULL")]
-		public bool isManager
-		{
-			get
-			{
-				return this._isManager;
-			}
-			set
-			{
-				if ((this._isManager != value))
-				{
-					this._isManager = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRadiologist", DbType="Bit NOT NULL")]
-		public bool isRadiologist
-		{
-			get
-			{
-				return this._isRadiologist;
-			}
-			set
-			{
-				if ((this._isRadiologist != value))
-				{
-					this._isRadiologist = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRadiologistADI", DbType="Bit NOT NULL")]
-		public bool isRadiologistADI
-		{
-			get
-			{
-				return this._isRadiologistADI;
-			}
-			set
-			{
-				if ((this._isRadiologistADI != value))
-				{
-					this._isRadiologistADI = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isTech", DbType="Bit NOT NULL")]
-		public bool isTech
-		{
-			get
-			{
-				return this._isTech;
-			}
-			set
-			{
-				if ((this._isTech != value))
-				{
-					this._isTech = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isClerk", DbType="Bit NOT NULL")]
-		public bool isClerk
-		{
-			get
-			{
-				return this._isClerk;
-			}
-			set
-			{
-				if ((this._isClerk != value))
-				{
-					this._isClerk = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isTelerad", DbType="Bit NOT NULL")]
-		public bool isTelerad
-		{
-			get
-			{
-				return this._isTelerad;
-			}
-			set
-			{
-				if ((this._isTelerad != value))
-				{
-					this._isTelerad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isPhysician", DbType="Bit NOT NULL")]
-		public bool isPhysician
-		{
-			get
-			{
-				return this._isPhysician;
-			}
-			set
-			{
-				if ((this._isPhysician != value))
-				{
-					this._isPhysician = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isPatient", DbType="Bit NOT NULL")]
-		public bool isPatient
-		{
-			get
-			{
-				return this._isPatient;
-			}
-			set
-			{
-				if ((this._isPatient != value))
-				{
-					this._isPatient = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoder", DbType="Bit NOT NULL")]
-		public bool isCoder
-		{
-			get
-			{
-				return this._isCoder;
-			}
-			set
-			{
-				if ((this._isCoder != value))
-				{
-					this._isCoder = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ShortName", DbType="NVarChar(30) NOT NULL", CanBeNull=false)]
-		public string ShortName
-		{
-			get
-			{
-				return this._ShortName;
-			}
-			set
-			{
-				if ((this._ShortName != value))
-				{
-					this._ShortName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoderAssignable", DbType="Bit NOT NULL")]
-		public bool isCoderAssignable
-		{
-			get
-			{
-				return this._isCoderAssignable;
-			}
-			set
-			{
-				if ((this._isCoderAssignable != value))
-				{
-					this._isCoderAssignable = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RadGroup", DbType="Int NOT NULL")]
-		public int RadGroup
-		{
-			get
-			{
-				return this._RadGroup;
-			}
-			set
-			{
-				if ((this._RadGroup != value))
-				{
-					this._RadGroup = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoderLimited", DbType="Bit NOT NULL")]
-		public bool isCoderLimited
-		{
-			get
-			{
-				return this._isCoderLimited;
-			}
-			set
-			{
-				if ((this._isCoderLimited != value))
-				{
-					this._isCoderLimited = value;
-				}
-			}
-		}
-	}
-	
 	public partial class sGetUsersResult
 	{
 		
@@ -19408,6 +19185,320 @@ namespace eRIS.Web
 				if ((this._TotalRVUs != value))
 				{
 					this._TotalRVUs = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sGetPermissionsResult
+	{
+		
+		private int _ID;
+		
+		private bool _isAdmin;
+		
+		private bool _isRISAdmin;
+		
+		private bool _isManager;
+		
+		private bool _isRadiologist;
+		
+		private bool _isRadiologistADI;
+		
+		private bool _isTech;
+		
+		private bool _isClerk;
+		
+		private bool _isTelerad;
+		
+		private bool _isPhysician;
+		
+		private bool _isPatient;
+		
+		private bool _isCoder;
+		
+		private string _ShortName;
+		
+		private bool _isCoderAssignable;
+		
+		private int _RadGroup;
+		
+		private bool _isCoderLimited;
+		
+		private bool _isFollowUpEnabled;
+		
+		public sGetPermissionsResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this._ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isAdmin", DbType="Bit NOT NULL")]
+		public bool isAdmin
+		{
+			get
+			{
+				return this._isAdmin;
+			}
+			set
+			{
+				if ((this._isAdmin != value))
+				{
+					this._isAdmin = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRISAdmin", DbType="Bit NOT NULL")]
+		public bool isRISAdmin
+		{
+			get
+			{
+				return this._isRISAdmin;
+			}
+			set
+			{
+				if ((this._isRISAdmin != value))
+				{
+					this._isRISAdmin = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isManager", DbType="Bit NOT NULL")]
+		public bool isManager
+		{
+			get
+			{
+				return this._isManager;
+			}
+			set
+			{
+				if ((this._isManager != value))
+				{
+					this._isManager = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRadiologist", DbType="Bit NOT NULL")]
+		public bool isRadiologist
+		{
+			get
+			{
+				return this._isRadiologist;
+			}
+			set
+			{
+				if ((this._isRadiologist != value))
+				{
+					this._isRadiologist = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRadiologistADI", DbType="Bit NOT NULL")]
+		public bool isRadiologistADI
+		{
+			get
+			{
+				return this._isRadiologistADI;
+			}
+			set
+			{
+				if ((this._isRadiologistADI != value))
+				{
+					this._isRadiologistADI = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isTech", DbType="Bit NOT NULL")]
+		public bool isTech
+		{
+			get
+			{
+				return this._isTech;
+			}
+			set
+			{
+				if ((this._isTech != value))
+				{
+					this._isTech = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isClerk", DbType="Bit NOT NULL")]
+		public bool isClerk
+		{
+			get
+			{
+				return this._isClerk;
+			}
+			set
+			{
+				if ((this._isClerk != value))
+				{
+					this._isClerk = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isTelerad", DbType="Bit NOT NULL")]
+		public bool isTelerad
+		{
+			get
+			{
+				return this._isTelerad;
+			}
+			set
+			{
+				if ((this._isTelerad != value))
+				{
+					this._isTelerad = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isPhysician", DbType="Bit NOT NULL")]
+		public bool isPhysician
+		{
+			get
+			{
+				return this._isPhysician;
+			}
+			set
+			{
+				if ((this._isPhysician != value))
+				{
+					this._isPhysician = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isPatient", DbType="Bit NOT NULL")]
+		public bool isPatient
+		{
+			get
+			{
+				return this._isPatient;
+			}
+			set
+			{
+				if ((this._isPatient != value))
+				{
+					this._isPatient = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoder", DbType="Bit NOT NULL")]
+		public bool isCoder
+		{
+			get
+			{
+				return this._isCoder;
+			}
+			set
+			{
+				if ((this._isCoder != value))
+				{
+					this._isCoder = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ShortName", DbType="NVarChar(30) NOT NULL", CanBeNull=false)]
+		public string ShortName
+		{
+			get
+			{
+				return this._ShortName;
+			}
+			set
+			{
+				if ((this._ShortName != value))
+				{
+					this._ShortName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoderAssignable", DbType="Bit NOT NULL")]
+		public bool isCoderAssignable
+		{
+			get
+			{
+				return this._isCoderAssignable;
+			}
+			set
+			{
+				if ((this._isCoderAssignable != value))
+				{
+					this._isCoderAssignable = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RadGroup", DbType="Int NOT NULL")]
+		public int RadGroup
+		{
+			get
+			{
+				return this._RadGroup;
+			}
+			set
+			{
+				if ((this._RadGroup != value))
+				{
+					this._RadGroup = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoderLimited", DbType="Bit NOT NULL")]
+		public bool isCoderLimited
+		{
+			get
+			{
+				return this._isCoderLimited;
+			}
+			set
+			{
+				if ((this._isCoderLimited != value))
+				{
+					this._isCoderLimited = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isFollowUpEnabled", DbType="Bit NOT NULL")]
+		public bool isFollowUpEnabled
+		{
+			get
+			{
+				return this._isFollowUpEnabled;
+			}
+			set
+			{
+				if ((this._isFollowUpEnabled != value))
+				{
+					this._isFollowUpEnabled = value;
 				}
 			}
 		}

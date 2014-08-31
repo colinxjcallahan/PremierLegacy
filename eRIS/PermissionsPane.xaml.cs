@@ -56,7 +56,7 @@ namespace eRIS
             sGetPersonnelResult item = gvDetails.SelectedItem as sGetPersonnelResult;         
             // Request login validation
             eRISServiceClient client = new eRISServiceClient();
-            client.SetPermissionsAsync(item.ID, isAdmin.IsChecked.Value, isRISAdmin.IsChecked.Value, isManager.IsChecked.Value, isRadiologist.IsChecked.Value, isRadiologistADI.IsChecked.Value, isTech.IsChecked.Value, isClerk.IsChecked.Value, isTelerad.IsChecked.Value, isPhysician.IsChecked.Value, isPatient.IsChecked.Value, isCoder.IsChecked.Value, shortName.Text, isCoderAssignable.IsChecked.Value, SelRadGroup, isCoderLimited.IsChecked.Value);
+            client.SetPermissionsAsync(item.ID, isAdmin.IsChecked.Value, isRISAdmin.IsChecked.Value, isManager.IsChecked.Value, isRadiologist.IsChecked.Value, isRadiologistADI.IsChecked.Value, isTech.IsChecked.Value, isClerk.IsChecked.Value, isTelerad.IsChecked.Value, isPhysician.IsChecked.Value, isPatient.IsChecked.Value, isCoder.IsChecked.Value, shortName.Text, isCoderAssignable.IsChecked.Value, SelRadGroup, isCoderLimited.IsChecked.Value, isFollowUpEnabled.IsChecked.Value);
             // Log status
             pPage.appendLog(this.GetType().ToString(), "Updated " + item.UserID);
         }
@@ -91,6 +91,7 @@ namespace eRIS
             isCoder.IsChecked = currentDetail.isCoder;
             isCoderAssignable.IsChecked = currentDetail.isCoderAssignable;
             isCoderLimited.IsChecked = currentDetail.isCoderLimited;
+            isFollowUpEnabled.IsChecked = currentDetail.isFollowUpEnabled;
             RadGroup.SelectedValue = currentDetail.RadGroup;
             SelRadGroup = currentDetail.RadGroup;
             shortName.Text = currentDetail.ShortName;

@@ -1,2 +1,2 @@
-C:\Projects\eRIS\eRIS
+C:\Projects\PremierLegacy\eRIS
 Generated_Code\eRIS.Web.g.cs
