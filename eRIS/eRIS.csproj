@@ -127,6 +127,9 @@
     <Compile Include="BioImagingPane.xaml.cs">
       <DependentUpon>BioImagingPane.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FollowUpsPane.xaml.cs">
+      <DependentUpon>FollowUpsPane.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Menus.cs" />
     <Compile Include="PhyCoderOrdersPane.xaml.cs">
       <DependentUpon>PhyCoderOrdersPane.xaml</DependentUpon>
@@ -234,6 +237,10 @@
     <Page Include="BioImagingPane.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FollowUpsPane.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PhyCoderOrdersPane.xaml">
       <Generator>MSBuild:Compile</Generator>

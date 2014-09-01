@@ -192,6 +192,14 @@ namespace eRIS
                             return true;
                         }
                         break;
+                    case "FollowUpEnabled":
+                        if (currentLogin.isFollowUpEnabled == true)
+                        {
+                            return true;
+                        }
+                        break;
+
+
                     case "Everyone":
                         return true;
                 }
@@ -274,6 +282,12 @@ namespace eRIS
                     PermissionsPane.Header = "Permissions";
                     WorkspacePanes.Items.Add(PermissionsPane);
                     break;
+
+                case "FollowUpsPane":
+                    RadDocumentPane FollowUpsPane = new FollowUpsPane();
+                    WorkspacePanes.Items.Add(FollowUpsPane);
+                    break;
+
                 case "PhyCoderCodingPane":
                     RadDocumentPane PhyCoderCodingPane = new PhyCoderCodingPane(pTitle);
                     WorkspacePanes.Items.Add(PhyCoderCodingPane);

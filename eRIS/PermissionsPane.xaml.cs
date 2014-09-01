@@ -53,7 +53,7 @@ namespace eRIS
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
             // Get the selected item from the grid
-            sGetPersonnelResult item = gvDetails.SelectedItem as sGetPersonnelResult;         
+            sGetPersonnelResult item = gvDetails.SelectedItem as sGetPersonnelResult;
             // Request login validation
             eRISServiceClient client = new eRISServiceClient();
             client.SetPermissionsAsync(item.ID, isAdmin.IsChecked.Value, isRISAdmin.IsChecked.Value, isManager.IsChecked.Value, isRadiologist.IsChecked.Value, isRadiologistADI.IsChecked.Value, isTech.IsChecked.Value, isClerk.IsChecked.Value, isTelerad.IsChecked.Value, isPhysician.IsChecked.Value, isPatient.IsChecked.Value, isCoder.IsChecked.Value, shortName.Text, isCoderAssignable.IsChecked.Value, SelRadGroup, isCoderLimited.IsChecked.Value, isFollowUpEnabled.IsChecked.Value);

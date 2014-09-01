@@ -710,6 +710,8 @@ namespace eRIS.eRISServiceReference {
     [System.Runtime.Serialization.DataContractAttribute(Name="sLoginResult", Namespace="http://schemas.datacontract.org/2004/07/eRIS.Web")]
     public partial class sLoginResult : object, System.ComponentModel.INotifyPropertyChanged {
         
+        private string DefaultRoleField;
+        
         private string FirstNameField;
         
         private int IDField;
@@ -717,6 +719,8 @@ namespace eRIS.eRISServiceReference {
         private string LastNameField;
         
         private System.Nullable<int> RadGroupField;
+        
+        private string ShortNameField;
         
         private string TypeField;
         
@@ -729,6 +733,8 @@ namespace eRIS.eRISServiceReference {
         private System.Nullable<bool> isCoderField;
         
         private System.Nullable<bool> isCoderLimitedField;
+        
+        private System.Nullable<bool> isFollowUpEnabledField;
         
         private System.Nullable<bool> isManagerField;
         
@@ -745,6 +751,19 @@ namespace eRIS.eRISServiceReference {
         private System.Nullable<bool> isTechField;
         
         private System.Nullable<bool> isTeleradField;
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string DefaultRole {
+            get {
+                return this.DefaultRoleField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.DefaultRoleField, value) != true)) {
+                    this.DefaultRoleField = value;
+                    this.RaisePropertyChanged("DefaultRole");
+                }
+            }
+        }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
         public string FirstName {
@@ -794,6 +813,19 @@ namespace eRIS.eRISServiceReference {
                 if ((this.RadGroupField.Equals(value) != true)) {
                     this.RadGroupField = value;
                     this.RaisePropertyChanged("RadGroup");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string ShortName {
+            get {
+                return this.ShortNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ShortNameField, value) != true)) {
+                    this.ShortNameField = value;
+                    this.RaisePropertyChanged("ShortName");
                 }
             }
         }
@@ -872,6 +904,19 @@ namespace eRIS.eRISServiceReference {
                 if ((this.isCoderLimitedField.Equals(value) != true)) {
                     this.isCoderLimitedField = value;
                     this.RaisePropertyChanged("isCoderLimited");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Nullable<bool> isFollowUpEnabled {
+            get {
+                return this.isFollowUpEnabledField;
+            }
+            set {
+                if ((this.isFollowUpEnabledField.Equals(value) != true)) {
+                    this.isFollowUpEnabledField = value;
+                    this.RaisePropertyChanged("isFollowUpEnabled");
                 }
             }
         }

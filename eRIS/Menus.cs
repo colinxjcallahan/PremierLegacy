@@ -348,20 +348,10 @@ namespace eRIS
 
             this.Add(new Menu()
             {
-                Header = "Follow-ups",
-                Name = "MENU7",
-                Role = new String[] { "RISAdmin", "Coder" },
-                Visibility = System.Windows.Visibility.Visible,
-                SubMenu = 
-            {
-                new Menu()
-                {
-                    Header = "Coder Worklist",
-                    Name = "PhyCoderWorklistPane",
-                    Role = new String[] { "RISAdmin", "Coder" },
-                    Visibility = System.Windows.Visibility.Visible
-                }
-            }
+                Header = "Process Follow-ups",
+                Name = "FollowUpsPane",
+                Role = new String[] { "FollowUpEnabled" },
+                Visibility = System.Windows.Visibility.Visible
             });
         }
     }

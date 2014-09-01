@@ -938,13 +938,6 @@ namespace eRIS.Web
 			return ((ISingleResult<sGetUsersResult>)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sLogin")]
-		public ISingleResult<sLoginResult> sLogin([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserName", DbType="VarChar(50)")] string userName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserPassword", DbType="VarChar(50)")] string userPassword, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IPAddress", DbType="VarChar(50)")] string iPAddress)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userName, userPassword, iPAddress);
-			return ((ISingleResult<sLoginResult>)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sStudiesReadPerDay")]
 		public ISingleResult<sStudiesReadPerDayResult> sStudiesReadPerDay([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> begDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="DateTime")] System.Nullable<System.DateTime> endDate, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> group)
 		{
@@ -1009,6 +1002,13 @@ namespace eRIS.Web
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), iD, isAdmin, isRISAdmin, isManager, isRadiologist, isRadiologistADI, isTech, isClerk, isTelerad, isPhysician, isPatient, isCoder, shortName, isCoderAssignable, radGroup, isCoderLimited, isFollowUpEnabled);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.sLogin")]
+		public ISingleResult<sLoginResult> sLogin([global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserName", DbType="VarChar(50)")] string userName, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="UserPassword", DbType="VarChar(50)")] string userPassword, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="IPAddress", DbType="VarChar(50)")] string iPAddress)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), userName, userPassword, iPAddress);
+			return ((ISingleResult<sLoginResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -18422,338 +18422,6 @@ namespace eRIS.Web
 		}
 	}
 	
-	public partial class sLoginResult
-	{
-		
-		private int _ID;
-		
-		private System.Nullable<bool> _isAdmin;
-		
-		private System.Nullable<bool> _isRISAdmin;
-		
-		private System.Nullable<bool> _isManager;
-		
-		private System.Nullable<bool> _isRadiologist;
-		
-		private System.Nullable<bool> _isRadiologistADI;
-		
-		private System.Nullable<bool> _isTech;
-		
-		private System.Nullable<bool> _isClerk;
-		
-		private System.Nullable<bool> _isTelerad;
-		
-		private System.Nullable<bool> _isPhysician;
-		
-		private System.Nullable<bool> _isPatient;
-		
-		private System.Nullable<bool> _isCoder;
-		
-		private string _Type;
-		
-		private string _FirstName;
-		
-		private string _LastName;
-		
-		private string _UserID;
-		
-		private System.Nullable<bool> _isCoderLimited;
-		
-		private System.Nullable<int> _RadGroup;
-		
-		public sLoginResult()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
-		public int ID
-		{
-			get
-			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this._ID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isAdmin", DbType="Bit")]
-		public System.Nullable<bool> isAdmin
-		{
-			get
-			{
-				return this._isAdmin;
-			}
-			set
-			{
-				if ((this._isAdmin != value))
-				{
-					this._isAdmin = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRISAdmin", DbType="Bit")]
-		public System.Nullable<bool> isRISAdmin
-		{
-			get
-			{
-				return this._isRISAdmin;
-			}
-			set
-			{
-				if ((this._isRISAdmin != value))
-				{
-					this._isRISAdmin = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isManager", DbType="Bit")]
-		public System.Nullable<bool> isManager
-		{
-			get
-			{
-				return this._isManager;
-			}
-			set
-			{
-				if ((this._isManager != value))
-				{
-					this._isManager = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRadiologist", DbType="Bit")]
-		public System.Nullable<bool> isRadiologist
-		{
-			get
-			{
-				return this._isRadiologist;
-			}
-			set
-			{
-				if ((this._isRadiologist != value))
-				{
-					this._isRadiologist = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRadiologistADI", DbType="Bit")]
-		public System.Nullable<bool> isRadiologistADI
-		{
-			get
-			{
-				return this._isRadiologistADI;
-			}
-			set
-			{
-				if ((this._isRadiologistADI != value))
-				{
-					this._isRadiologistADI = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isTech", DbType="Bit")]
-		public System.Nullable<bool> isTech
-		{
-			get
-			{
-				return this._isTech;
-			}
-			set
-			{
-				if ((this._isTech != value))
-				{
-					this._isTech = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isClerk", DbType="Bit")]
-		public System.Nullable<bool> isClerk
-		{
-			get
-			{
-				return this._isClerk;
-			}
-			set
-			{
-				if ((this._isClerk != value))
-				{
-					this._isClerk = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isTelerad", DbType="Bit")]
-		public System.Nullable<bool> isTelerad
-		{
-			get
-			{
-				return this._isTelerad;
-			}
-			set
-			{
-				if ((this._isTelerad != value))
-				{
-					this._isTelerad = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isPhysician", DbType="Bit")]
-		public System.Nullable<bool> isPhysician
-		{
-			get
-			{
-				return this._isPhysician;
-			}
-			set
-			{
-				if ((this._isPhysician != value))
-				{
-					this._isPhysician = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isPatient", DbType="Bit")]
-		public System.Nullable<bool> isPatient
-		{
-			get
-			{
-				return this._isPatient;
-			}
-			set
-			{
-				if ((this._isPatient != value))
-				{
-					this._isPatient = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoder", DbType="Bit")]
-		public System.Nullable<bool> isCoder
-		{
-			get
-			{
-				return this._isCoder;
-			}
-			set
-			{
-				if ((this._isCoder != value))
-				{
-					this._isCoder = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Type", DbType="NVarChar(50)")]
-		public string Type
-		{
-			get
-			{
-				return this._Type;
-			}
-			set
-			{
-				if ((this._Type != value))
-				{
-					this._Type = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(50)")]
-		public string FirstName
-		{
-			get
-			{
-				return this._FirstName;
-			}
-			set
-			{
-				if ((this._FirstName != value))
-				{
-					this._FirstName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50)")]
-		public string LastName
-		{
-			get
-			{
-				return this._LastName;
-			}
-			set
-			{
-				if ((this._LastName != value))
-				{
-					this._LastName = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserID", DbType="Char(255)")]
-		public string UserID
-		{
-			get
-			{
-				return this._UserID;
-			}
-			set
-			{
-				if ((this._UserID != value))
-				{
-					this._UserID = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoderLimited", DbType="Bit")]
-		public System.Nullable<bool> isCoderLimited
-		{
-			get
-			{
-				return this._isCoderLimited;
-			}
-			set
-			{
-				if ((this._isCoderLimited != value))
-				{
-					this._isCoderLimited = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RadGroup", DbType="Int")]
-		public System.Nullable<int> RadGroup
-		{
-			get
-			{
-				return this._RadGroup;
-			}
-			set
-			{
-				if ((this._RadGroup != value))
-				{
-					this._RadGroup = value;
-				}
-			}
-		}
-	}
-	
 	public partial class sStudiesReadPerDayResult
 	{
 		
@@ -19499,6 +19167,392 @@ namespace eRIS.Web
 				if ((this._isFollowUpEnabled != value))
 				{
 					this._isFollowUpEnabled = value;
+				}
+			}
+		}
+	}
+	
+	public partial class sLoginResult
+	{
+		
+		private int _ID;
+		
+		private System.Nullable<bool> _isAdmin;
+		
+		private System.Nullable<bool> _isRISAdmin;
+		
+		private System.Nullable<bool> _isManager;
+		
+		private System.Nullable<bool> _isRadiologist;
+		
+		private System.Nullable<bool> _isRadiologistADI;
+		
+		private System.Nullable<bool> _isTech;
+		
+		private System.Nullable<bool> _isClerk;
+		
+		private System.Nullable<bool> _isTelerad;
+		
+		private System.Nullable<bool> _isPhysician;
+		
+		private System.Nullable<bool> _isPatient;
+		
+		private System.Nullable<bool> _isCoder;
+		
+		private string _Type;
+		
+		private string _FirstName;
+		
+		private string _LastName;
+		
+		private string _UserID;
+		
+		private System.Nullable<bool> _isCoderLimited;
+		
+		private System.Nullable<bool> _isFollowUpEnabled;
+		
+		private System.Nullable<int> _RadGroup;
+		
+		private string _DefaultRole;
+		
+		private string _ShortName;
+		
+		public sLoginResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL")]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this._ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isAdmin", DbType="Bit")]
+		public System.Nullable<bool> isAdmin
+		{
+			get
+			{
+				return this._isAdmin;
+			}
+			set
+			{
+				if ((this._isAdmin != value))
+				{
+					this._isAdmin = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRISAdmin", DbType="Bit")]
+		public System.Nullable<bool> isRISAdmin
+		{
+			get
+			{
+				return this._isRISAdmin;
+			}
+			set
+			{
+				if ((this._isRISAdmin != value))
+				{
+					this._isRISAdmin = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isManager", DbType="Bit")]
+		public System.Nullable<bool> isManager
+		{
+			get
+			{
+				return this._isManager;
+			}
+			set
+			{
+				if ((this._isManager != value))
+				{
+					this._isManager = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRadiologist", DbType="Bit")]
+		public System.Nullable<bool> isRadiologist
+		{
+			get
+			{
+				return this._isRadiologist;
+			}
+			set
+			{
+				if ((this._isRadiologist != value))
+				{
+					this._isRadiologist = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isRadiologistADI", DbType="Bit")]
+		public System.Nullable<bool> isRadiologistADI
+		{
+			get
+			{
+				return this._isRadiologistADI;
+			}
+			set
+			{
+				if ((this._isRadiologistADI != value))
+				{
+					this._isRadiologistADI = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isTech", DbType="Bit")]
+		public System.Nullable<bool> isTech
+		{
+			get
+			{
+				return this._isTech;
+			}
+			set
+			{
+				if ((this._isTech != value))
+				{
+					this._isTech = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isClerk", DbType="Bit")]
+		public System.Nullable<bool> isClerk
+		{
+			get
+			{
+				return this._isClerk;
+			}
+			set
+			{
+				if ((this._isClerk != value))
+				{
+					this._isClerk = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isTelerad", DbType="Bit")]
+		public System.Nullable<bool> isTelerad
+		{
+			get
+			{
+				return this._isTelerad;
+			}
+			set
+			{
+				if ((this._isTelerad != value))
+				{
+					this._isTelerad = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isPhysician", DbType="Bit")]
+		public System.Nullable<bool> isPhysician
+		{
+			get
+			{
+				return this._isPhysician;
+			}
+			set
+			{
+				if ((this._isPhysician != value))
+				{
+					this._isPhysician = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isPatient", DbType="Bit")]
+		public System.Nullable<bool> isPatient
+		{
+			get
+			{
+				return this._isPatient;
+			}
+			set
+			{
+				if ((this._isPatient != value))
+				{
+					this._isPatient = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoder", DbType="Bit")]
+		public System.Nullable<bool> isCoder
+		{
+			get
+			{
+				return this._isCoder;
+			}
+			set
+			{
+				if ((this._isCoder != value))
+				{
+					this._isCoder = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Type", DbType="NVarChar(50)")]
+		public string Type
+		{
+			get
+			{
+				return this._Type;
+			}
+			set
+			{
+				if ((this._Type != value))
+				{
+					this._Type = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FirstName", DbType="NVarChar(50)")]
+		public string FirstName
+		{
+			get
+			{
+				return this._FirstName;
+			}
+			set
+			{
+				if ((this._FirstName != value))
+				{
+					this._FirstName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LastName", DbType="NVarChar(50)")]
+		public string LastName
+		{
+			get
+			{
+				return this._LastName;
+			}
+			set
+			{
+				if ((this._LastName != value))
+				{
+					this._LastName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_UserID", DbType="Char(255)")]
+		public string UserID
+		{
+			get
+			{
+				return this._UserID;
+			}
+			set
+			{
+				if ((this._UserID != value))
+				{
+					this._UserID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isCoderLimited", DbType="Bit")]
+		public System.Nullable<bool> isCoderLimited
+		{
+			get
+			{
+				return this._isCoderLimited;
+			}
+			set
+			{
+				if ((this._isCoderLimited != value))
+				{
+					this._isCoderLimited = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_isFollowUpEnabled", DbType="Bit")]
+		public System.Nullable<bool> isFollowUpEnabled
+		{
+			get
+			{
+				return this._isFollowUpEnabled;
+			}
+			set
+			{
+				if ((this._isFollowUpEnabled != value))
+				{
+					this._isFollowUpEnabled = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RadGroup", DbType="Int")]
+		public System.Nullable<int> RadGroup
+		{
+			get
+			{
+				return this._RadGroup;
+			}
+			set
+			{
+				if ((this._RadGroup != value))
+				{
+					this._RadGroup = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DefaultRole", DbType="Char(12) NOT NULL", CanBeNull=false)]
+		public string DefaultRole
+		{
+			get
+			{
+				return this._DefaultRole;
+			}
+			set
+			{
+				if ((this._DefaultRole != value))
+				{
+					this._DefaultRole = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ShortName", DbType="NVarChar(30)")]
+		public string ShortName
+		{
+			get
+			{
+				return this._ShortName;
+			}
+			set
+			{
+				if ((this._ShortName != value))
+				{
+					this._ShortName = value;
 				}
 			}
 		}

@@ -105,16 +105,19 @@
   <xs:element name="ArrayOfsLoginResult" nillable="true" type="tns:ArrayOfsLoginResult" />
   <xs:complexType name="sLoginResult">
     <xs:sequence>
+      <xs:element minOccurs="0" name="DefaultRole" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ID" type="xs:int" />
       <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="RadGroup" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="isAdmin" nillable="true" type="xs:boolean" />
       <xs:element minOccurs="0" name="isClerk" nillable="true" type="xs:boolean" />
       <xs:element minOccurs="0" name="isCoder" nillable="true" type="xs:boolean" />
       <xs:element minOccurs="0" name="isCoderLimited" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="isFollowUpEnabled" nillable="true" type="xs:boolean" />
       <xs:element minOccurs="0" name="isManager" nillable="true" type="xs:boolean" />
       <xs:element minOccurs="0" name="isPatient" nillable="true" type="xs:boolean" />
       <xs:element minOccurs="0" name="isPhysician" nillable="true" type="xs:boolean" />
