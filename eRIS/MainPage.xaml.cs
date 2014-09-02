@@ -209,6 +209,10 @@ namespace eRIS
         // Open new document panel
         public void openPanel(string pTitle, string pName)
         {
+            
+            
+
+
             // Check for pane already open and set focus if open already
             RadPaneGroup pg = WorkspacePanes;
             foreach (RadPane pane in pg.EnumeratePanes())
@@ -284,8 +288,7 @@ namespace eRIS
                     break;
 
                 case "FollowUpsPane":
-                    RadDocumentPane FollowUpsPane = new FollowUpsPane();
-                    WorkspacePanes.Items.Add(FollowUpsPane);
+                    System.Windows.Browser.HtmlPage.Window.Navigate(new Uri("http://localhost/Followup/OpenFollowUps"), "_blank");
                     break;
 
                 case "PhyCoderCodingPane":
