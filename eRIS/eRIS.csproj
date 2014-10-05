@@ -121,6 +121,7 @@
     <Compile Include="AvgRegistrationPane.xaml.cs">
       <DependentUpon>AvgRegistrationPane.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ConfigurationHelper.cs" />
     <Compile Include="CompletedPerTechPane.xaml.cs">
       <DependentUpon>CompletedPerTechPane.xaml</DependentUpon>
     </Compile>
@@ -220,12 +221,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <Page Include="App.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </ApplicationDefinition>
+    </Page>
     <Page Include="AvgRegistrationPane.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

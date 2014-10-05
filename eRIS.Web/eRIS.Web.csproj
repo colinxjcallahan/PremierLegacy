@@ -82,6 +82,7 @@
     <Content Include="eRISService.svc" />
     <Content Include="Silverlight.js" />
     <Content Include="SplashScreen.js" />
+    <None Include="app.config" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -201,7 +202,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>63126</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>https://devbox/</IISUrl>
+          <IISUrl>https://localhost:666/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>https://eris.premierradiology.com/</CustomServerUrl>

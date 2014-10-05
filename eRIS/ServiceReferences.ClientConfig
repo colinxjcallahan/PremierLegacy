@@ -14,4 +14,8 @@
                 name="CustomBinding_eRISService" />
         </client>
     </system.serviceModel>
+
+  <appSettings>
+    <add key="FollowUpsUrl" value="http://localhost/followup/openfollowups" />
+  </appSettings>
 </configuration>

@@ -28,6 +28,8 @@ namespace eRIS
         public ObservableCollection<sGetUsersResult> allUsers;
         public string LastSQL;
         public string CodingLocation;
+        private string _currentLoginUserId;
+
         public MainPage()
         {
             InitializeComponent();
@@ -59,6 +61,9 @@ namespace eRIS
             {
                 // Process results
                 currentLogin = e.Result.First();
+
+                _currentLoginUserId = currentLogin.UserID;
+
                 // Close the login panel
                 Login.IsHidden = true;
                 // Disable menu entries we don't have permission to see
@@ -288,7 +293,9 @@ namespace eRIS
                     break;
 
                 case "FollowUpsPane":
-                    System.Windows.Browser.HtmlPage.Window.Navigate(new Uri("http://localhost/Followup/OpenFollowUps"), "_blank");
+
+                    var followUpsUrl = ConfigurationHelper.GetAppSetting("FollowUpsUrl") + "?UserID=" + _currentLoginUserId;
+                    System.Windows.Browser.HtmlPage.Window.Navigate(new Uri(followUpsUrl), "_blank");
                     break;
 
                 case "PhyCoderCodingPane":

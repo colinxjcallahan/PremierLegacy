@@ -1,0 +1,6 @@
+C:\Projects\eRIS\eRIS.Web\bin\SplashScreen.xaml
+C:\Projects\eRIS\eRIS.Web\bin\eRIS.Web.dll.config
+C:\Projects\eRIS\eRIS.Web\bin\eRIS.Web.dll
+C:\Projects\eRIS\eRIS.Web\bin\eRIS.Web.pdb
+C:\Projects\eRIS\eRIS.Web\obj\Release\eRIS.Web.dll
+C:\Projects\eRIS\eRIS.Web\obj\Release\eRIS.Web.pdb
